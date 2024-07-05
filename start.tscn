@@ -31,16 +31,28 @@ position = Vector2(-244.53, -16.731)
 texture = ExtResource("2_lx0ce")
 script = ExtResource("3_bwisw")
 
-[node name="ButtonMulai" type="Sprite2D" parent="."]
+[node name="Node2D2" type="Node2D" parent="."]
 position = Vector2(188, 369)
 scale = Vector2(0.3955, 0.459432)
-texture = ExtResource("3_6yqek")
 
-[node name="ButtonQuiz" type="Sprite2D" parent="."]
-position = Vector2(188, 460)
-scale = Vector2(0.400375, 0.430653)
+[node name="ButtonQuiz" type="Sprite2D" parent="Node2D2"]
+position = Vector2(0, 198.071)
+scale = Vector2(1.01233, 0.937359)
 texture = ExtResource("5_i350b")
+
+[node name="ButtonMulai" type="Sprite2D" parent="Node2D2"]
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(1, 1)
+texture = ExtResource("3_6yqek")
 
 [node name="Title" type="Sprite2D" parent="."]
 position = Vector2(201, 425)
 texture = ExtResource("4_herkp")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 1.0
+text = "hellooooooooooooooo
+
+"
+visible_characters = 50
+visible_ratio = 2.38095
