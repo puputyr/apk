@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwhlspuso8q7p"
-path="res://.godot/imported/Awal.png-da23140586c7daafab30442a9287bbc8.ctex"
+uid="uid://c27x5a1qmefjh"
+path="res://.godot/imported/tekspaper.png-dbd4aba666c4b5013aaa4da1ecbffda1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 9-12/Awal.png"
-dest_files=["res://.godot/imported/Awal.png-da23140586c7daafab30442a9287bbc8.ctex"]
+source_file="res://asset 9-11/tekspaper.png"
+dest_files=["res://.godot/imported/tekspaper.png-dbd4aba666c4b5013aaa4da1ecbffda1.ctex"]
 
 [params]
 

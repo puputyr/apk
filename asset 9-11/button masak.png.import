@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8qpe1g6vsiw2"
-path="res://.godot/imported/bayi9-12.png-12b25b7a1941be7b8f3ee3d1b80cb7e5.ctex"
+uid="uid://c6db0r8jxyygl"
+path="res://.godot/imported/button masak.png-b4010c3bf63946c5c9b67640d11a2bae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 9-12/bayi9-12.png"
-dest_files=["res://.godot/imported/bayi9-12.png-12b25b7a1941be7b8f3ee3d1b80cb7e5.ctex"]
+source_file="res://asset 9-11/button masak.png"
+dest_files=["res://.godot/imported/button masak.png-b4010c3bf63946c5c9b67640d11a2bae.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnu0h2hrothl1"
-path="res://.godot/imported/bg bayi.png-ea2da0aec417b14af2a190161be88e4e.ctex"
+uid="uid://c3cwcsaf20x54"
+path="res://.godot/imported/telur.png-9a797d25083fb7cc2d0ebbcd5a2922f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 9-12/bg bayi.png"
-dest_files=["res://.godot/imported/bg bayi.png-ea2da0aec417b14af2a190161be88e4e.ctex"]
+source_file="res://asset 9-11/telur.png"
+dest_files=["res://.godot/imported/telur.png-9a797d25083fb7cc2d0ebbcd5a2922f9.ctex"]
 
 [params]
 

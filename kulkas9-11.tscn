@@ -1,0 +1,53 @@
+[gd_scene load_steps=10 format=3 uid="uid://bh0hm5ts8p6xv"]
+
+[ext_resource type="Script" path="res://ke masak.gd" id="1_c8y3o"]
+[ext_resource type="Texture2D" uid="uid://cf1de0hkgisdv" path="res://asset 9-11/bg biru.png" id="2_wtbqb"]
+[ext_resource type="Texture2D" uid="uid://5l1j0ftso5qv" path="res://asset 9-11/kulkas.png" id="3_tb838"]
+[ext_resource type="Texture2D" uid="uid://c3cwcsaf20x54" path="res://asset 9-11/telur.png" id="4_lf843"]
+[ext_resource type="Texture2D" uid="uid://clurcp7h641uh" path="res://asset 9-11/santan.png" id="5_uw1hs"]
+[ext_resource type="Texture2D" uid="uid://dumhylfxto2cq" path="res://asset 9-11/tempe.png" id="6_teepn"]
+[ext_resource type="Texture2D" uid="uid://opj6r4fwdmj4" path="res://asset 9-11/wortel.png" id="7_iu6vr"]
+[ext_resource type="Texture2D" uid="uid://dv8xg5ajvk51m" path="res://asset 9-11/beras.png" id="8_wnt4m"]
+[ext_resource type="Texture2D" uid="uid://ys4hnt0qa75l" path="res://asset 9-11/minyak kelapa.png" id="9_c7ikl"]
+
+[node name="kulkas" type="Node2D"]
+script = ExtResource("1_c8y3o")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(278.25, 489.5)
+scale = Vector2(1.52545, 1.19836)
+texture = ExtResource("2_wtbqb")
+
+[node name="bg biru" type="Sprite2D" parent="."]
+position = Vector2(271, 492)
+scale = Vector2(1.68515, 1.68515)
+texture = ExtResource("3_tb838")
+
+[node name="Telur" type="Sprite2D" parent="."]
+position = Vector2(159, 173)
+texture = ExtResource("4_lf843")
+
+[node name="Santan" type="Sprite2D" parent="."]
+position = Vector2(386, 164)
+texture = ExtResource("5_uw1hs")
+
+[node name="Tempe" type="Sprite2D" parent="."]
+position = Vector2(158, 324)
+texture = ExtResource("6_teepn")
+
+[node name="Wortel" type="Sprite2D" parent="."]
+position = Vector2(385, 466)
+texture = ExtResource("7_iu6vr")
+
+[node name="Beras" type="Sprite2D" parent="."]
+position = Vector2(138, 589)
+texture = ExtResource("8_wnt4m")
+
+[node name="MinyakKelapa" type="Sprite2D" parent="."]
+position = Vector2(385, 568)
+texture = ExtResource("9_c7ikl")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
