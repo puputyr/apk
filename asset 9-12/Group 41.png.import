@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jobd2bs56rxp"
-path="res://.godot/imported/button mulai.png-9cbaf83e8ecb5be203989735beccbd3e.ctex"
+uid="uid://kp5jx5cubswf"
+path="res://.godot/imported/Group 41.png-92af4da86d0dfc415e0d529c559a7e3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/button mulai.png"
-dest_files=["res://.godot/imported/button mulai.png-9cbaf83e8ecb5be203989735beccbd3e.ctex"]
+source_file="res://asset 9-12/Group 41.png"
+dest_files=["res://.godot/imported/Group 41.png-92af4da86d0dfc415e0d529c559a7e3e.ctex"]
 
 [params]
 

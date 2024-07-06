@@ -10,17 +10,15 @@ config_version=5
 
 [application]
 
-config/name="stunting fighter"
-run/main_scene="res://start.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+config/name="8-12 bulan"
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=400
-window/size/viewport_height=846
+window/size/viewport_width=540
+window/size/viewport_height=960
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+renderer/rendering_method="mobile"

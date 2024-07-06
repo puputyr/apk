@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqiobnwe5euje"]
+
+[ext_resource type="Texture2D" uid="uid://cnu0h2hrothl1" path="res://asset 9-12/bg bayi.png" id="1_k7iau"]
+[ext_resource type="Texture2D" uid="uid://8qpe1g6vsiw2" path="res://asset 9-12/bayi9-12.png" id="2_xi5me"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BgBayi" type="Sprite2D" parent="."]
+position = Vector2(270, 482)
+scale = Vector2(0.501389, 0.501389)
+texture = ExtResource("1_k7iau")
+
+[node name="Bayi9-12" type="Sprite2D" parent="."]
+position = Vector2(353, 745)
+texture = ExtResource("2_xi5me")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3lltve2xfpi5"
-path="res://.godot/imported/button quiz.png-d003386664bd8e415c71ff08fae00f6e.ctex"
+uid="uid://c27x5a1qmefjh"
+path="res://.godot/imported/7.png-a66c467f64381a21eb1ea4fafe339e38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/button quiz.png"
-dest_files=["res://.godot/imported/button quiz.png-d003386664bd8e415c71ff08fae00f6e.ctex"]
+source_file="res://asset 9-12/7.png"
+dest_files=["res://.godot/imported/7.png-a66c467f64381a21eb1ea4fafe339e38.ctex"]
 
 [params]
 

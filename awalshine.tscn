@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=3 uid="uid://cnlpeekh5tj8o"]
+
+[ext_resource type="Script" path="res://ke bayi.gd" id="1_mmhtq"]
+[ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset 9-12/Awal.png" id="1_yy3la"]
+[ext_resource type="Texture2D" uid="uid://fyjnc7vtx0yy" path="res://asset 9-12/2.png" id="3_pcj4y"]
+[ext_resource type="Texture2D" uid="uid://kp5jx5cubswf" path="res://asset 9-12/Group 41.png" id="4_4dfpj"]
+
+[sub_resource type="Animation" id="Animation_hcemh"]
+resource_name = "shine"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.74533, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ubfhx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3k63k"]
+_data = {
+"RESET": SubResource("Animation_ubfhx"),
+"shine": SubResource("Animation_hcemh")
+}
+
+[sub_resource type="Animation" id="Animation_ikdqd"]
+resource_name = "teks"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("teks:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+
+[sub_resource type="Animation" id="Animation_r1gna"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("teks:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6pblx"]
+_data = {
+"RESET": SubResource("Animation_r1gna"),
+"teks": SubResource("Animation_ikdqd")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_mmhtq")
+
+[node name="backgroundkuning" type="Sprite2D" parent="."]
+position = Vector2(292, 498)
+scale = Vector2(1.60201, 1.22854)
+texture = ExtResource("1_yy3la")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(275, 436)
+scale = Vector2(1.75127, 1.38959)
+texture = ExtResource("3_pcj4y")
+
+[node name="shine" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3k63k")
+}
+autoplay = "shine"
+
+[node name="teks" type="Sprite2D" parent="."]
+position = Vector2(276, 473)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("4_4dfpj")
+
+[node name="teks2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6pblx")
+}
+autoplay = "teks"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkoidy4iqyd82"
-path="res://.godot/imported/title.png-717f19236843734636810b60652a08d3.ctex"
+uid="uid://8qpe1g6vsiw2"
+path="res://.godot/imported/bayi9-12.png-12b25b7a1941be7b8f3ee3d1b80cb7e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/title.png"
-dest_files=["res://.godot/imported/title.png-717f19236843734636810b60652a08d3.ctex"]
+source_file="res://asset 9-12/bayi9-12.png"
+dest_files=["res://.godot/imported/bayi9-12.png-12b25b7a1941be7b8f3ee3d1b80cb7e5.ctex"]
 
 [params]
 
