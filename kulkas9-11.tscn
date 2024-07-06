@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://clurcp7h641uh" path="res://asset 9-11/santan.png" id="5_uw1hs"]
 [ext_resource type="Texture2D" uid="uid://dumhylfxto2cq" path="res://asset 9-11/tempe.png" id="6_teepn"]
 [ext_resource type="Texture2D" uid="uid://opj6r4fwdmj4" path="res://asset 9-11/wortel.png" id="7_iu6vr"]
-[ext_resource type="Texture2D" uid="uid://dv8xg5ajvk51m" path="res://asset 9-11/beras.png" id="8_wnt4m"]
+[ext_resource type="Texture2D" uid="uid://dv8xg5ajvk51m" path="res://asset 9-11/Beras.png" id="8_wnt4m"]
 [ext_resource type="Texture2D" uid="uid://ys4hnt0qa75l" path="res://asset 9-11/minyak kelapa.png" id="9_c7ikl"]
 
 [node name="kulkas" type="Node2D"]

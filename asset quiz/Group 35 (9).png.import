@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgnf6vxfyrmgp"
-path="res://.godot/imported/Group 35 (9).png-c7e87b80cb15470545e92eccd9f63b2a.ctex"
+path="res://.godot/imported/Group 35 (9).png-980e9f26ba188dddf12fefb77c863166.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/Group 35 (9).png"
-dest_files=["res://.godot/imported/Group 35 (9).png-c7e87b80cb15470545e92eccd9f63b2a.ctex"]
+source_file="res://asset quiz/Group 35 (9).png"
+dest_files=["res://.godot/imported/Group 35 (9).png-980e9f26ba188dddf12fefb77c863166.ctex"]
 
 [params]
 

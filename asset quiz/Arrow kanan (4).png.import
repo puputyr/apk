@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by54xbc00qo7v"
-path="res://.godot/imported/Arrow kanan (4).png-1806ac8b563aace08119294d153d5429.ctex"
+path="res://.godot/imported/Arrow kanan (4).png-008eda0d4267b0ffd087c28e6621fa3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/Arrow kanan (4).png"
-dest_files=["res://.godot/imported/Arrow kanan (4).png-1806ac8b563aace08119294d153d5429.ctex"]
+source_file="res://asset quiz/Arrow kanan (4).png"
+dest_files=["res://.godot/imported/Arrow kanan (4).png-008eda0d4267b0ffd087c28e6621fa3c.ctex"]
 
 [params]
 

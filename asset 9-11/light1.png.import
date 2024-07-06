@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk11eoyl1fode"
-path="res://.godot/imported/Group 43.png-d65f92abada34d5f5d46178f6fcfb463.ctex"
+uid="uid://s0mnjdpuco6p"
+path="res://.godot/imported/light1.png-7891cca6048bb9a4913a7bf0309868c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset quiz/Group 43.png"
-dest_files=["res://.godot/imported/Group 43.png-d65f92abada34d5f5d46178f6fcfb463.ctex"]
+source_file="res://asset 9-11/light1.png"
+dest_files=["res://.godot/imported/light1.png-7891cca6048bb9a4913a7bf0309868c0.ctex"]
 
 [params]
 
