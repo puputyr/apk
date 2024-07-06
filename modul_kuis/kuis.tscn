@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmq7ug4vwc03v"]
+
+[ext_resource type="Script" path="res://modul_kuis/kuis.gd" id="1_cr52n"]
+[ext_resource type="Texture2D" uid="uid://b6sxi57egagi4" path="res://asset quiz/Rectangle 61.png" id="2_xka36"]
+[ext_resource type="Texture2D" uid="uid://cwr87omuqlbvd" path="res://modul_kuis/asset/bg_quiz.png" id="3_0elgb"]
+[ext_resource type="Texture2D" uid="uid://d3ur6v674qjpu" path="res://modul_kuis/asset/arrow_kiri.png" id="4_cbdjr"]
+[ext_resource type="Texture2D" uid="uid://bekgqjebm34wf" path="res://modul_kuis/asset/Home.png" id="5_a85jh"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_cr52n")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(271, 482.499)
+scale = Vector2(1.37913, 1.13263)
+texture = ExtResource("2_xka36")
+
+[node name="header quiz" type="Sprite2D" parent="."]
+position = Vector2(270.875, 41.927)
+scale = Vector2(1.37977, 1.4601)
+texture = ExtResource("3_0elgb")
+
+[node name="btn-back" type="Button" parent="."]
+offset_left = 9.0
+offset_top = 16.0
+offset_right = 83.0
+offset_bottom = 116.0
+scale = Vector2(0.5, 0.5)
+icon = ExtResource("4_cbdjr")
+flat = true
+
+[node name="btn-home" type="Button" parent="."]
+offset_left = 473.0
+offset_top = 18.0
+offset_right = 571.0
+offset_bottom = 114.0
+scale = Vector2(0.5, 0.5)
+icon = ExtResource("5_a85jh")
+flat = true
+
+[node name="soal" type="Sprite2D" parent="."]
+position = Vector2(286, 339)
+scale = Vector2(1.168, 1.1)
+
+[node name="pil-1" type="Button" parent="."]
+offset_left = 124.0
+offset_top = 486.0
+offset_right = 749.0
+offset_bottom = 618.0
+scale = Vector2(0.5, 0.5)
+flat = true
+
+[node name="pil-2" type="Button" parent="."]
+offset_left = 122.0
+offset_top = 579.0
+offset_right = 747.0
+offset_bottom = 711.0
+scale = Vector2(0.5, 0.5)
+flat = true
+
+[node name="pil-3" type="Button" parent="."]
+offset_left = 124.0
+offset_top = 669.0
+offset_right = 749.0
+offset_bottom = 801.0
+scale = Vector2(0.5, 0.5)
+flat = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(200106, -20972.6)
+anchor_mode = 0
+
+[node name="checklist" type="Node" parent="."]
+
+[connection signal="pressed" from="btn-back" to="." method="_on_btnback_pressed"]
+[connection signal="pressed" from="btn-home" to="." method="_on_btnhome_pressed"]
+[connection signal="pressed" from="pil-1" to="." method="_on_pil_1_pressed"]
+[connection signal="pressed" from="pil-2" to="." method="_on_pil_2_pressed"]
+[connection signal="pressed" from="pil-3" to="." method="_on_pil_3_pressed"]
