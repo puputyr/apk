@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://d12wa3jwnx04m"]
+[gd_scene load_steps=11 format=3 uid="uid://d12wa3jwnx04m"]
 
 [ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset 9-11/Awal.png" id="1_210gw"]
+[ext_resource type="Script" path="res://script/intro.gd" id="1_dbttu"]
 [ext_resource type="Texture2D" uid="uid://dkhw2n8angmrv" path="res://asset intro/bukit.png" id="2_o2chp"]
 [ext_resource type="Texture2D" uid="uid://6o1by6aphrem" path="res://asset intro/dokter.png" id="3_6fi38"]
-[ext_resource type="Texture2D" uid="uid://bhycmcpobbjax" path="res://asset intro/buttonnext.png" id="4_s1rgp"]
 [ext_resource type="Texture2D" uid="uid://bce2bjf5oarql" path="res://asset intro/peta.png" id="5_gv5y8"]
 [ext_resource type="Texture2D" uid="uid://ecarqfsgjmaw" path="res://asset intro/teksbox.png" id="6_tilf8"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="7_woa73"]
 
 [sub_resource type="Animation" id="Animation_e6u62"]
 length = 0.001
@@ -45,6 +46,7 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_dbttu")
 
 [node name="Awal" type="Sprite2D" parent="."]
 position = Vector2(273, 510)
@@ -71,7 +73,7 @@ scale = Vector2(1.78221, 1.78221)
 texture = ExtResource("6_tilf8")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../Control/Buttonnext")
+root_node = NodePath("../Control")
 libraries = {
 "": SubResource("AnimationLibrary_6gkqa")
 }
@@ -80,12 +82,18 @@ autoplay = "buttonnext"
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 440.0
-offset_top = 850.0
-offset_right = 480.0
-offset_bottom = 890.0
+offset_left = 489.0
+offset_top = 895.0
+offset_right = 529.0
+offset_bottom = 935.0
+scale = Vector2(1.47101, 1.47101)
 metadata/_edit_use_anchors_ = true
 
-[node name="Buttonnext" type="Sprite2D" parent="Control"]
-scale = Vector2(1.47101, 1.47101)
-texture = ExtResource("4_s1rgp")
+[node name="next" type="TextureButton" parent="Control"]
+offset_left = -46.0
+offset_top = -49.0
+offset_right = 23.0
+offset_bottom = 23.0
+texture_normal = ExtResource("7_woa73")
+
+[connection signal="pressed" from="Control/next" to="." method="_on_next_pressed"]
