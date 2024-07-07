@@ -10,6 +10,33 @@
 [ext_resource type="Texture2D" uid="uid://ce1rc37fhodto" path="res://asset start/hrefq.png" id="7_8at0r"]
 [ext_resource type="Script" path="res://Buttonquiz.gd" id="9_r7a6w"]
 
+[sub_resource type="Animation" id="Animation_8yuxc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cloud2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(516, 188)]
+}
+
 [sub_resource type="Animation" id="Animation_jd20c"]
 resource_name = "cloud"
 length = 4.0
@@ -37,33 +64,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(400, 188), Vector2(350, 188), Vector2(300, 188), Vector2(250, 188), Vector2(200, 188), Vector2(100, 188), Vector2(50, 188), Vector2(0, 188), Vector2(-50, 188), Vector2(-100, 188), Vector2(-160, 188)]
-}
-
-[sub_resource type="Animation" id="Animation_8yuxc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Cloud:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Cloud2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(516, 188)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dxtgt"]

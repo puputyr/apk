@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clurcp7h641uh"
-path="res://.godot/imported/santan.png-22fcce4a5ba8c9835ea27dc3d5b55b03.ctex"
+uid="uid://dl3a42qnm162l"
+path="res://.godot/imported/ikan.png-964c780821b532c1b34784ed7268d014.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 9-11/santan.png"
-dest_files=["res://.godot/imported/santan.png-22fcce4a5ba8c9835ea27dc3d5b55b03.ctex"]
+source_file="res://asset 9-11/ikan.png"
+dest_files=["res://.godot/imported/ikan.png-964c780821b532c1b34784ed7268d014.ctex"]
 
 [params]
 

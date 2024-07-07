@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3cwcsaf20x54"
-path="res://.godot/imported/telur.png-9a797d25083fb7cc2d0ebbcd5a2922f9.ctex"
+uid="uid://d1jebnikoft8m"
+path="res://.godot/imported/food.png-a582c77be4f4fe9102a3645e19658cd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 9-11/telur.png"
-dest_files=["res://.godot/imported/telur.png-9a797d25083fb7cc2d0ebbcd5a2922f9.ctex"]
+source_file="res://asset 9-11/food.png"
+dest_files=["res://.godot/imported/food.png-a582c77be4f4fe9102a3645e19658cd7.ctex"]
 
 [params]
 

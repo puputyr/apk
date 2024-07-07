@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cf1de0hkgisdv" path="res://asset 9-11/bg biru.png" id="1_gak4x"]
 [ext_resource type="Texture2D" uid="uid://bdy6s7604yj3c" path="res://asset 9-11/button info.png" id="2_jhfkh"]
-[ext_resource type="Texture2D" uid="uid://d3f24uemru241" path="res://asset 9-11/food9-11.png" id="3_nxvbj"]
+[ext_resource type="Texture2D" uid="uid://d1jebnikoft8m" path="res://asset 9-11/food.png" id="3_u75bs"]
 
 [node name="food9-11" type="Node2D"]
 
@@ -16,7 +16,7 @@ position = Vector2(264, 702)
 scale = Vector2(1.39412, 1.39412)
 texture = ExtResource("2_jhfkh")
 
-[node name="Food9-11" type="Sprite2D" parent="."]
-position = Vector2(274, 361)
-scale = Vector2(1.35388, 1.35388)
-texture = ExtResource("3_nxvbj")
+[node name="Food" type="Sprite2D" parent="."]
+position = Vector2(269.524, 427.75)
+scale = Vector2(1.25785, 1.25785)
+texture = ExtResource("3_u75bs")
