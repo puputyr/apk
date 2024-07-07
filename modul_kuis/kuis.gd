@@ -37,6 +37,8 @@ var scene_salah = preload("res://modul_kuis/kuis_salah.tscn")
 
 func _ready():
 	current_kuis = Global.kuis_level 
+	if current_kuis == 0:
+		$"btn-back".visible = false
 	if current_kuis < kuis.size():
 		$"soal".texture = load(kuis[current_kuis].soal)
 		$"pil-1".icon = load(kuis[current_kuis].pil_1)
@@ -54,6 +56,7 @@ func _process(delta):
 
 
 func _on_btnhome_pressed():
+	get_tree().change_scene_to_file("res://scene/bissmillah_start.tscn")
 	pass #ini untuk mengubah tombol home kemana
 
 
