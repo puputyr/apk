@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dq0ym4tuk3uen"]
+[gd_scene load_steps=11 format=3 uid="uid://dq0ym4tuk3uen"]
 
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_c7j4q"]
 [ext_resource type="Texture2D" uid="uid://b2f4e6v0hwidp" path="res://6 bulan/halaman 2/kulkas.png" id="2_4ik73"]
 [ext_resource type="Texture2D" uid="uid://d0yjpxybto60h" path="res://6 bulan/halaman 2/bubble-chat.png" id="3_015c6"]
+[ext_resource type="Texture2D" uid="uid://boc8dyps2cq66" path="res://6 bulan/button-lanjut.png" id="4_e7vwd"]
 [ext_resource type="Texture2D" uid="uid://bs06sdu5m8kcn" path="res://6 bulan/halaman 2/1.png" id="4_oxjuj"]
 [ext_resource type="Texture2D" uid="uid://d1odlrnentgev" path="res://6 bulan/halaman 2/2.png" id="5_0a7h4"]
 [ext_resource type="Texture2D" uid="uid://bocd27xov47ix" path="res://6 bulan/halaman 2/4.png" id="6_itd2b"]
@@ -18,25 +19,36 @@ scale = Vector2(2.74809, 2.25704)
 texture = ExtResource("1_c7j4q")
 
 [node name="kulkas" type="Sprite2D" parent="."]
-position = Vector2(504, 871)
+position = Vector2(494.246, 738)
 scale = Vector2(1.06527, 1.13248)
 texture = ExtResource("2_4ik73")
 
 [node name="kulkas2" type="Sprite2D" parent="."]
-position = Vector2(504, 871)
+position = Vector2(494.246, 738)
 scale = Vector2(1.06527, 1.13248)
 texture = ExtResource("2_4ik73")
 
 [node name="Bubble-chat" type="Sprite2D" parent="."]
-position = Vector2(359, 1506)
+position = Vector2(349.246, 1373)
 scale = Vector2(2.2, 2.34063)
 texture = ExtResource("3_015c6")
+
+[node name="susu-p" type="Button" parent="."]
+offset_left = 331.0
+offset_top = 1547.0
+offset_right = 750.0
+offset_bottom = 1753.0
+icon = ExtResource("4_e7vwd")
+flat = true
+expand_icon = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -9.75421
+offset_top = -133.0
+offset_right = 30.2458
+offset_bottom = -93.0
 
 [node name="susu-p" type="Button" parent="Control"]
 layout_mode = 0

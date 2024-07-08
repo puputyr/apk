@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_ct24w"]
 [ext_resource type="Texture2D" uid="uid://bjpoiuegi1ior" path="res://6 bulan/halaman 2/Bubble-chat1.4.png" id="2_4o0x1"]
-[ext_resource type="Texture2D" uid="uid://dbwef73gv178t" path="res://halaman 2/button.png" id="3_hrlxp"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="3_2h7sf"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,5 +21,5 @@ offset_left = 480.0
 offset_top = 1505.0
 offset_right = 690.0
 offset_bottom = 1705.0
-icon = ExtResource("3_hrlxp")
+icon = ExtResource("3_2h7sf")
 flat = true

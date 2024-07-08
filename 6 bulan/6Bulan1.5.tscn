@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_ngtwr"]
 [ext_resource type="Texture2D" uid="uid://1g0sx2gk5o4n" path="res://6 bulan/halaman 2/info-susu.png" id="2_pfyfe"]
 [ext_resource type="Texture2D" uid="uid://dtuihnnhrbkmu" path="res://6 bulan/halaman 2/info-ASI.png" id="3_wnyi1"]
-[ext_resource type="Texture2D" uid="uid://dbwef73gv178t" path="res://halaman 2/button.png" id="4_tefao"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="4_okpfu"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -27,5 +27,5 @@ offset_left = 415.0
 offset_top = 1510.0
 offset_right = 625.0
 offset_bottom = 1710.0
-icon = ExtResource("4_tefao")
+icon = ExtResource("4_okpfu")
 flat = true

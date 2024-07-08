@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgbxa0jct86hf"]
+[gd_scene load_steps=5 format=3 uid="uid://cgbxa0jct86hf"]
 
 [ext_resource type="Texture2D" uid="uid://cdm6dt6kofsfa" path="res://6 bulan/halaman 2/Background-6Bulan1.3.png" id="1_85qee"]
 [ext_resource type="Texture2D" uid="uid://o5qbbhvumtwr" path="res://6 bulan/halaman 2/Desain tanpa judul (12).png" id="2_xbw84"]
 [ext_resource type="Texture2D" uid="uid://dwr8vafa3fppm" path="res://6 bulan/halaman 2/5.png" id="3_6yrt4"]
-[ext_resource type="Script" path="res://Button.gd" id="5_gaqwb"]
-[ext_resource type="Texture2D" uid="uid://dbwef73gv178t" path="res://halaman 2/button.png" id="6_1fp1s"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="4_s5y8c"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -28,6 +27,5 @@ offset_left = 450.0
 offset_top = 1618.0
 offset_right = 660.0
 offset_bottom = 1818.0
-icon = ExtResource("6_1fp1s")
+icon = ExtResource("4_s5y8c")
 flat = true
-script = ExtResource("5_gaqwb")
