@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g7p5h3ghmcu2"
-path="res://.godot/imported/nasgor.png-2d238cc9fee880d3579722f40ef943b4.ctex"
+path="res://.godot/imported/nasgor.png-6a9f6403faba36a50c73e2d9bc45052b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/nasgor.png"
-dest_files=["res://.godot/imported/nasgor.png-2d238cc9fee880d3579722f40ef943b4.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/nasgor.png"
+dest_files=["res://.godot/imported/nasgor.png-6a9f6403faba36a50c73e2d9bc45052b.ctex"]
 
 [params]
 

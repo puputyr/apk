@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o18ba7ygim5u"
-path="res://.godot/imported/makanan.png-2b34e07257a330766fa2384c0e578fbe.ctex"
+path="res://.godot/imported/makanan.png-5faa71af1bfb45e05e6557f1d5cf375d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/makanan.png"
-dest_files=["res://.godot/imported/makanan.png-2b34e07257a330766fa2384c0e578fbe.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/makanan.png"
+dest_files=["res://.godot/imported/makanan.png-5faa71af1bfb45e05e6557f1d5cf375d.ctex"]
 
 [params]
 

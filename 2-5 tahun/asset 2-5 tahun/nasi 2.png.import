@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bij37q3tvnwgk"
-path="res://.godot/imported/nasi 2.png-614f6311939706e4ba3b356012bd8311.ctex"
+path="res://.godot/imported/nasi 2.png-2bede118f702e828d9cd1d07cf865407.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/nasi 2.png"
-dest_files=["res://.godot/imported/nasi 2.png-614f6311939706e4ba3b356012bd8311.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/nasi 2.png"
+dest_files=["res://.godot/imported/nasi 2.png-2bede118f702e828d9cd1d07cf865407.ctex"]
 
 [params]
 

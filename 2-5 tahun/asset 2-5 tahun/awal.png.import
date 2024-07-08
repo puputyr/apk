@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byu8o6ii8qqqi"
-path="res://.godot/imported/awal.png-2a32e54e22c4480c6001dc813df3363e.ctex"
+path="res://.godot/imported/awal.png-cb42786b141c24f63f203659f706962f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/awal.png"
-dest_files=["res://.godot/imported/awal.png-2a32e54e22c4480c6001dc813df3363e.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/awal.png"
+dest_files=["res://.godot/imported/awal.png-cb42786b141c24f63f203659f706962f.ctex"]
 
 [params]
 

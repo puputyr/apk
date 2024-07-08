@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch22vl7yhv0kq"
-path="res://.godot/imported/lemak.png-605da406a1a82ff0327a39b8c009a83a.ctex"
+path="res://.godot/imported/lemak.png-b0722c171da729550c070c75e8b8d1d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/lemak.png"
-dest_files=["res://.godot/imported/lemak.png-605da406a1a82ff0327a39b8c009a83a.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/lemak.png"
+dest_files=["res://.godot/imported/lemak.png-b0722c171da729550c070c75e8b8d1d5.ctex"]
 
 [params]
 

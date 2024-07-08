@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpjravxcesnpc"
-path="res://.godot/imported/buah.png-6dabeec48c47dc31ba10b97fccb9e485.ctex"
+path="res://.godot/imported/buah.png-f48cb5610cebef5e8ff25dffdab92184.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/buah.png"
-dest_files=["res://.godot/imported/buah.png-6dabeec48c47dc31ba10b97fccb9e485.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/buah.png"
+dest_files=["res://.godot/imported/buah.png-f48cb5610cebef5e8ff25dffdab92184.ctex"]
 
 [params]
 

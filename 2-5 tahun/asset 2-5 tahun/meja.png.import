@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxomu7sy6onij"
-path="res://.godot/imported/meja.png-02e21402fddd2fb672098228f9840671.ctex"
+path="res://.godot/imported/meja.png-75386947b20248207064c2d83d4b4494.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/meja.png"
-dest_files=["res://.godot/imported/meja.png-02e21402fddd2fb672098228f9840671.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/meja.png"
+dest_files=["res://.godot/imported/meja.png-75386947b20248207064c2d83d4b4494.ctex"]
 
 [params]
 

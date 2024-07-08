@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4solbunuouad"
-path="res://.godot/imported/Gizi seimbang.png-bc803bcb9ed308081ed286b655bc5af2.ctex"
+path="res://.godot/imported/Gizi seimbang.png-ef01b2c98942afce64b3102330b5e1eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/Gizi seimbang.png"
-dest_files=["res://.godot/imported/Gizi seimbang.png-bc803bcb9ed308081ed286b655bc5af2.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/Gizi seimbang.png"
+dest_files=["res://.godot/imported/Gizi seimbang.png-ef01b2c98942afce64b3102330b5e1eb.ctex"]
 
 [params]
 

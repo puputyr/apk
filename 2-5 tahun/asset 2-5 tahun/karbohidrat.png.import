@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkryhenph37p1"
-path="res://.godot/imported/karbohidrat.png-b43d3c5e5cc539ade1708cdecb55a119.ctex"
+path="res://.godot/imported/karbohidrat.png-d898faaf09be26d777ec0b00350b9f15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/karbohidrat.png"
-dest_files=["res://.godot/imported/karbohidrat.png-b43d3c5e5cc539ade1708cdecb55a119.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/karbohidrat.png"
+dest_files=["res://.godot/imported/karbohidrat.png-d898faaf09be26d777ec0b00350b9f15.ctex"]
 
 [params]
 

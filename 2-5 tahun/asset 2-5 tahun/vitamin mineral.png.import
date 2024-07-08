@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfkobpdjtd7t1"
-path="res://.godot/imported/vitamin mineral.png-e3f0af0ee734128e93ecdd82d241b260.ctex"
+path="res://.godot/imported/vitamin mineral.png-1c55cb6e028dedfc11ae787fcfd5973f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/vitamin mineral.png"
-dest_files=["res://.godot/imported/vitamin mineral.png-e3f0af0ee734128e93ecdd82d241b260.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/vitamin mineral.png"
+dest_files=["res://.godot/imported/vitamin mineral.png-1c55cb6e028dedfc11ae787fcfd5973f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqojrjkpgevup"
-path="res://.godot/imported/ikan.png-c22db76f7e7c7429785457c885e0d5ab.ctex"
+path="res://.godot/imported/ikan.png-73d17a0a5d293f6211ff4ba2e037aa2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 2-5 tahun/ikan.png"
-dest_files=["res://.godot/imported/ikan.png-c22db76f7e7c7429785457c885e0d5ab.ctex"]
+source_file="res://2-5 tahun/asset 2-5 tahun/ikan.png"
+dest_files=["res://.godot/imported/ikan.png-73d17a0a5d293f6211ff4ba2e037aa2a.ctex"]
 
 [params]
 

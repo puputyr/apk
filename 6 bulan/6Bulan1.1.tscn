@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_c7j4q"]
 [ext_resource type="Texture2D" uid="uid://b2f4e6v0hwidp" path="res://6 bulan/halaman 2/kulkas.png" id="2_4ik73"]
 [ext_resource type="Texture2D" uid="uid://d0yjpxybto60h" path="res://6 bulan/halaman 2/bubble-chat.png" id="3_015c6"]
-[ext_resource type="Texture2D" uid="uid://boc8dyps2cq66" path="res://6 bulan/button-lanjut.png" id="4_e7vwd"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="4_7avc3"]
 [ext_resource type="Texture2D" uid="uid://bs06sdu5m8kcn" path="res://6 bulan/halaman 2/1.png" id="4_oxjuj"]
 [ext_resource type="Texture2D" uid="uid://d1odlrnentgev" path="res://6 bulan/halaman 2/2.png" id="5_0a7h4"]
 [ext_resource type="Texture2D" uid="uid://bocd27xov47ix" path="res://6 bulan/halaman 2/4.png" id="6_itd2b"]
@@ -34,11 +34,11 @@ scale = Vector2(2.2, 2.34063)
 texture = ExtResource("3_015c6")
 
 [node name="lanjut" type="Button" parent="."]
-offset_left = 331.0
-offset_top = 1547.0
-offset_right = 750.0
-offset_bottom = 1753.0
-icon = ExtResource("4_e7vwd")
+offset_left = 438.0
+offset_top = 1530.0
+offset_right = 656.0
+offset_bottom = 1736.0
+icon = ExtResource("4_7avc3")
 flat = true
 expand_icon = true
 
