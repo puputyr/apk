@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://5exsmgqii8pr"]
+
+[ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_ngtwr"]
+[ext_resource type="Texture2D" uid="uid://1g0sx2gk5o4n" path="res://6 bulan/halaman 2/info-susu.png" id="2_pfyfe"]
+[ext_resource type="Texture2D" uid="uid://dtuihnnhrbkmu" path="res://6 bulan/halaman 2/info-ASI.png" id="3_wnyi1"]
+[ext_resource type="Texture2D" uid="uid://dbwef73gv178t" path="res://halaman 2/button.png" id="4_tefao"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(539, 960.5)
+scale = Vector2(2.74809, 2.25704)
+texture = ExtResource("1_ngtwr")
+
+[node name="bubble-chat" type="Sprite2D" parent="."]
+position = Vector2(550, 909)
+scale = Vector2(2.33595, 2.34813)
+texture = ExtResource("2_pfyfe")
+
+[node name="bubble-chat2" type="Sprite2D" parent="."]
+position = Vector2(536, 175)
+scale = Vector2(2.7888, 2.73339)
+texture = ExtResource("3_wnyi1")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 415.0
+offset_top = 1510.0
+offset_right = 625.0
+offset_bottom = 1710.0
+icon = ExtResource("4_tefao")
+flat = true

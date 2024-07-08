@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgbxa0jct86hf"]
+
+[ext_resource type="Texture2D" uid="uid://cdm6dt6kofsfa" path="res://6 bulan/halaman 2/Background-6Bulan1.3.png" id="1_85qee"]
+[ext_resource type="Texture2D" uid="uid://o5qbbhvumtwr" path="res://6 bulan/halaman 2/Desain tanpa judul (12).png" id="2_xbw84"]
+[ext_resource type="Texture2D" uid="uid://dwr8vafa3fppm" path="res://6 bulan/halaman 2/5.png" id="3_6yrt4"]
+[ext_resource type="Script" path="res://Button.gd" id="5_gaqwb"]
+[ext_resource type="Texture2D" uid="uid://dbwef73gv178t" path="res://halaman 2/button.png" id="6_1fp1s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(539, 896.5)
+scale = Vector2(2.74809, 2.39085)
+texture = ExtResource("1_85qee")
+
+[node name="bayi" type="Sprite2D" parent="."]
+position = Vector2(546, 997)
+scale = Vector2(1.27109, 1.26944)
+texture = ExtResource("2_xbw84")
+
+[node name="susu" type="Sprite2D" parent="."]
+position = Vector2(900, 1450)
+scale = Vector2(0.386111, 0.412037)
+texture = ExtResource("3_6yrt4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 1618.0
+offset_right = 660.0
+offset_bottom = 1818.0
+icon = ExtResource("6_1fp1s")
+flat = true
+script = ExtResource("5_gaqwb")
