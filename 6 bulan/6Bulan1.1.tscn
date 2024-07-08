@@ -33,7 +33,7 @@ position = Vector2(349.246, 1373)
 scale = Vector2(2.2, 2.34063)
 texture = ExtResource("3_015c6")
 
-[node name="susu-p" type="Button" parent="."]
+[node name="lanjut" type="Button" parent="."]
 offset_left = 331.0
 offset_top = 1547.0
 offset_right = 750.0
