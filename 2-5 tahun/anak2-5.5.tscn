@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://ccb63dwag5wlk"]
+
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_6fpnw"]
+[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://asset 2-5 tahun/meja.png" id="2_i11v6"]
+[ext_resource type="Texture2D" uid="uid://bddwy0y0io0rn" path="res://asset 2-5 tahun/jam 3.png" id="3_abdwg"]
+[ext_resource type="Texture2D" uid="uid://b0ybblpu7q32a" path="res://asset 2-5 tahun/melon.png" id="4_7nwc7"]
+[ext_resource type="Texture2D" uid="uid://g7p5h3ghmcu2" path="res://asset 2-5 tahun/nasgor.png" id="5_omkq3"]
+[ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://asset 2-5 tahun/air.png" id="6_haksa"]
+[ext_resource type="Texture2D" uid="uid://3666e8y5u1mq" path="res://asset 2-5 tahun/info.png" id="7_ojgil"]
+[ext_resource type="Script" path="res://Button 5.gd" id="9_erqj8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(269.25, 479)
+scale = Vector2(1.36768, 1.12207)
+texture = ExtResource("1_6fpnw")
+
+[node name="meja" type="Sprite2D" parent="."]
+position = Vector2(269, 443)
+scale = Vector2(1.06743, 1.03805)
+texture = ExtResource("2_i11v6")
+
+[node name="jam" type="Sprite2D" parent="."]
+position = Vector2(271, 210)
+texture = ExtResource("3_abdwg")
+
+[node name="melon" type="Sprite2D" parent="."]
+position = Vector2(244, 656)
+texture = ExtResource("4_7nwc7")
+
+[node name="nasgor" type="Sprite2D" parent="."]
+position = Vector2(267, 474)
+texture = ExtResource("5_omkq3")
+
+[node name="air" type="Sprite2D" parent="."]
+position = Vector2(362, 304)
+texture = ExtResource("6_haksa")
+
+[node name="Button 6" type="Button" parent="."]
+offset_left = 133.0
+offset_top = 745.0
+offset_right = 409.0
+offset_bottom = 825.0
+icon = ExtResource("7_ojgil")
+flat = true
+script = ExtResource("9_erqj8")

@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://dh6xv8euvel6k"]
+
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_vqhb6"]
+[ext_resource type="Texture2D" uid="uid://o18ba7ygim5u" path="res://asset 2-5 tahun/makanan.png" id="2_32uir"]
+[ext_resource type="Texture2D" uid="uid://4solbunuouad" path="res://asset 2-5 tahun/Gizi seimbang.png" id="3_t5ixu"]
+[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://asset 2-5 tahun/button.png" id="4_w7kjx"]
+
+[sub_resource type="GDScript" id="GDScript_5ew50"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(268.75, 480.5)
+scale = Vector2(1.37532, 1.12559)
+texture = ExtResource("1_vqhb6")
+
+[node name="makanan" type="Sprite2D" parent="."]
+position = Vector2(269, 486.5)
+scale = Vector2(1.05534, 1.03696)
+texture = ExtResource("2_32uir")
+
+[node name="gizi seimbang" type="Sprite2D" parent="."]
+position = Vector2(268, 93)
+texture = ExtResource("3_t5ixu")
+
+[node name="Button 3" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 794.0
+offset_right = 498.0
+offset_bottom = 874.0
+icon = ExtResource("4_w7kjx")
+flat = true
+script = SubResource("GDScript_5ew50")
