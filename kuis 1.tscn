@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://nrwic6dofcg3"]
+
+[ext_resource type="Texture2D" uid="uid://b6sxi57egagi4" path="res://asset quiz/Rectangle 61.png" id="1_hphvv"]
+[ext_resource type="Texture2D" uid="uid://ce5pjfo2o4w22" path="res://asset quiz/Group 34.png" id="2_k32sp"]
+[ext_resource type="Texture2D" uid="uid://by54xbc00qo7v" path="res://asset quiz/Arrow kanan (4).png" id="3_5p34x"]
+[ext_resource type="Texture2D" uid="uid://ihghyackyuav" path="res://asset quiz/Home (1).png" id="4_3xg7l"]
+[ext_resource type="Texture2D" uid="uid://ciyswxguw7n2r" path="res://asset quiz/Group 32.png" id="5_wf5ys"]
+[ext_resource type="Texture2D" uid="uid://cvjp5s0mmuaex" path="res://asset quiz/Group 35 (1).png" id="6_ujuth"]
+[ext_resource type="Texture2D" uid="uid://ci6ktg0cp8sgr" path="res://asset quiz/Group 35 (2).png" id="7_tlbq8"]
+[ext_resource type="Texture2D" uid="uid://db2mf2d23qvrg" path="res://asset quiz/Group 35 (3).png" id="8_8ndi5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(540, 959.5)
+scale = Vector2(2.74809, 2.25235)
+texture = ExtResource("1_hphvv")
+
+[node name="header quiz" type="Sprite2D" parent="."]
+position = Vector2(540.5, 80.75)
+scale = Vector2(2.75064, 2.72034)
+texture = ExtResource("2_k32sp")
+
+[node name="btn-back" type="Button" parent="."]
+offset_left = 46.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 132.0
+icon = ExtResource("3_5p34x")
+flat = true
+
+[node name="btn-home" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 30.0
+offset_right = 1047.0
+offset_bottom = 126.0
+icon = ExtResource("4_3xg7l")
+flat = true
+
+[node name="soal" type="Sprite2D" parent="."]
+position = Vector2(547.5, 595)
+scale = Vector2(2.62215, 2.46892)
+texture = ExtResource("5_wf5ys")
+
+[node name="pil-1" type="Button" parent="."]
+offset_left = 246.0
+offset_top = 1130.0
+offset_right = 871.0
+offset_bottom = 1262.0
+icon = ExtResource("6_ujuth")
+flat = true
+
+[node name="pil-2" type="Button" parent="."]
+offset_left = 247.0
+offset_top = 1320.0
+offset_right = 872.0
+offset_bottom = 1452.0
+icon = ExtResource("7_tlbq8")
+flat = true
+
+[node name="pil-3" type="Button" parent="."]
+offset_left = 247.0
+offset_top = 1503.0
+offset_right = 872.0
+offset_bottom = 1635.0
+icon = ExtResource("8_8ndi5")
+flat = true

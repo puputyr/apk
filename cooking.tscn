@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2tfyjt1big7i"]
+
+[ext_resource type="Texture2D" uid="uid://cf1de0hkgisdv" path="res://asset 9-11/bg biru.png" id="1_p2ob2"]
+[ext_resource type="Texture2D" uid="uid://dxhk31tndmblv" path="res://asset 9-11/kompor.png" id="2_32n3p"]
+[ext_resource type="Texture2D" uid="uid://c6db0r8jxyygl" path="res://asset 9-11/button masak.png" id="3_omqaq"]
+
+[node name="cooking" type="Node2D"]
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(269.75, 488.5)
+scale = Vector2(1.42112, 1.16784)
+texture = ExtResource("1_p2ob2")
+
+[node name="Kompor" type="Sprite2D" parent="."]
+position = Vector2(266, 324)
+scale = Vector2(1.09701, 1.09701)
+texture = ExtResource("2_32n3p")
+
+[node name="ButtonMasak" type="Sprite2D" parent="."]
+position = Vector2(257, 694)
+scale = Vector2(1.26471, 1.26471)
+texture = ExtResource("3_omqaq")

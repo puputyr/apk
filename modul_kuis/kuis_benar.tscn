@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://3st4mhlshh57"]
+
+[ext_resource type="Texture2D" uid="uid://ct3jyfrymugw2" path="res://modul_kuis/asset/benar.png" id="2_0fxnf"]
+[ext_resource type="Script" path="res://modul_kuis/kuis_benar.gd" id="2_exxqw"]
+[ext_resource type="AudioStream" uid="uid://bm0mk1tv7sdpa" path="res://modul_kuis/asset/effect/benar.mp3" id="3_iefxk"]
+
+[node name="bg" type="Sprite2D"]
+position = Vector2(279, 503)
+scale = Vector2(0.9, 0.9)
+script = ExtResource("2_exxqw")
+
+[node name="benar" type="Sprite2D" parent="."]
+position = Vector2(-1.111, 60)
+texture = ExtResource("2_0fxnf")
+offset = Vector2(3.33331, 10)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_iefxk")
+volume_db = 1.1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
