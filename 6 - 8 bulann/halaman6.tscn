@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvh8op5aw7hlr"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_d1xad"]
+[ext_resource type="Texture2D" uid="uid://cqe4m1tqxp3bp" path="res://asset 8 - 11 bulan/6button info.png" id="2_6m1qp"]
+[ext_resource type="Texture2D" uid="uid://cq15v82us8agb" path="res://asset 8 - 11 bulan/6bubur mpasi.png" id="3_ef1qh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(268.75, 477)
+scale = Vector2(1.3855, 1.12207)
+texture = ExtResource("1_d1xad")
+
+[node name="ButtonInfo" type="Sprite2D" parent="."]
+position = Vector2(271, 768)
+texture = ExtResource("2_6m1qp")
+
+[node name="BuburMpasi" type="Sprite2D" parent="."]
+position = Vector2(274, 493)
+scale = Vector2(0.389815, 0.386574)
+texture = ExtResource("3_ef1qh")
