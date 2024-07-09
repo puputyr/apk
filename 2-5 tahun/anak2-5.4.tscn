@@ -84,10 +84,11 @@ rotation = 1.8326
 script = ExtResource("9_tsich")
 
 [node name="ikan" type="Button" parent="TouchScreenIkan"]
-offset_left = -105.781
-offset_top = -116.595
-offset_right = 66.2186
-offset_bottom = 110.405
+offset_left = -95.3814
+offset_top = 69.039
+offset_right = 54.6186
+offset_bottom = 266.039
+rotation = -1.5708
 icon = ExtResource("4_jc4lm")
 flat = true
 expand_icon = true
