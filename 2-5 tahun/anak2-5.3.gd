@@ -11,5 +11,5 @@ func _process(delta):
 	pass
 
 
-func _on_button_2_pressed():
-	get_tree().change_scene_to_file("res://2-5 tahun/anak2-5.2.tscn")
+func _on_button_4_pressed():
+	get_tree().change_scene_to_file("res://2-5 tahun/anak2-5.4.tscn")

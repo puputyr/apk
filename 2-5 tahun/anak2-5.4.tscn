@@ -1,16 +1,17 @@
 [gd_scene load_steps=10 format=3 uid="uid://b8dk4sqad3rac"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_qurfs"]
-[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://asset 2-5 tahun/meja.png" id="2_sh8r8"]
-[ext_resource type="Texture2D" uid="uid://btknx1hw0ew5o" path="res://asset 2-5 tahun/jam 2.png" id="3_qtcuj"]
-[ext_resource type="Texture2D" uid="uid://dqojrjkpgevup" path="res://asset 2-5 tahun/ikan.png" id="4_jc4lm"]
-[ext_resource type="Texture2D" uid="uid://bij37q3tvnwgk" path="res://asset 2-5 tahun/nasi 2.png" id="5_u4nhf"]
-[ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://asset 2-5 tahun/air.png" id="6_xyevv"]
-[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://asset 2-5 tahun/button.png" id="7_cc3vu"]
-[ext_resource type="Texture2D" uid="uid://d3p6sf0x5gb71" path="res://asset 2-5 tahun/soup.png" id="7_lrsvw"]
-[ext_resource type="Script" path="res://Button 5.gd" id="9_w481c"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_qurfs"]
+[ext_resource type="Script" path="res://2-5 tahun/anak2-5.4.gd" id="1_rye13"]
+[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://2-5 tahun/asset 2-5 tahun/meja.png" id="2_sh8r8"]
+[ext_resource type="Texture2D" uid="uid://btknx1hw0ew5o" path="res://2-5 tahun/asset 2-5 tahun/jam 2.png" id="3_qtcuj"]
+[ext_resource type="Texture2D" uid="uid://dqojrjkpgevup" path="res://2-5 tahun/asset 2-5 tahun/ikan.png" id="4_jc4lm"]
+[ext_resource type="Texture2D" uid="uid://bij37q3tvnwgk" path="res://2-5 tahun/asset 2-5 tahun/nasi 2.png" id="5_u4nhf"]
+[ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://2-5 tahun/asset 2-5 tahun/air.png" id="6_xyevv"]
+[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="7_cc3vu"]
+[ext_resource type="Texture2D" uid="uid://d3p6sf0x5gb71" path="res://2-5 tahun/asset 2-5 tahun/soup.png" id="7_lrsvw"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_rye13")
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(269.25, 479)
@@ -49,4 +50,5 @@ offset_right = 498.0
 offset_bottom = 874.0
 icon = ExtResource("7_cc3vu")
 flat = true
-script = ExtResource("9_w481c")
+
+[connection signal="pressed" from="Button 5" to="." method="_on_button_5_pressed"]

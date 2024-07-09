@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dcy3okwini041"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_7hybq"]
-[ext_resource type="Texture2D" uid="uid://c5yi52jdenao7" path="res://asset 2-5 tahun/selesai.png" id="2_37roy"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_7hybq"]
+[ext_resource type="Texture2D" uid="uid://c5yi52jdenao7" path="res://2-5 tahun/asset 2-5 tahun/selesai.png" id="2_37roy"]
 
 [sub_resource type="GDScript" id="GDScript_5ew50"]
 script/source = "extends Button

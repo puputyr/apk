@@ -1,15 +1,16 @@
 [gd_scene load_steps=9 format=3 uid="uid://b5eoi1f37v4ig"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_1qxr6"]
-[ext_resource type="Texture2D" uid="uid://o1x1y311f3tg" path="res://asset 2-5 tahun/informasi gizi.png" id="2_gf8gf"]
-[ext_resource type="Texture2D" uid="uid://dkryhenph37p1" path="res://asset 2-5 tahun/karbohidrat.png" id="3_87lu5"]
-[ext_resource type="Texture2D" uid="uid://b5pjkrbojlvtf" path="res://asset 2-5 tahun/protein.png" id="4_lsqvc"]
-[ext_resource type="Texture2D" uid="uid://ch22vl7yhv0kq" path="res://asset 2-5 tahun/lemak.png" id="5_gfap7"]
-[ext_resource type="Texture2D" uid="uid://cfkobpdjtd7t1" path="res://asset 2-5 tahun/vitamin mineral.png" id="6_pbpmb"]
-[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://asset 2-5 tahun/button.png" id="6_vibyw"]
-[ext_resource type="Script" path="res://Button 7.gd" id="7_nhflg"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_1qxr6"]
+[ext_resource type="Script" path="res://2-5 tahun/anak2-5.6.gd" id="1_2c0d0"]
+[ext_resource type="Texture2D" uid="uid://o1x1y311f3tg" path="res://2-5 tahun/asset 2-5 tahun/informasi gizi.png" id="2_gf8gf"]
+[ext_resource type="Texture2D" uid="uid://dkryhenph37p1" path="res://2-5 tahun/asset 2-5 tahun/karbohidrat.png" id="3_87lu5"]
+[ext_resource type="Texture2D" uid="uid://b5pjkrbojlvtf" path="res://2-5 tahun/asset 2-5 tahun/protein.png" id="4_lsqvc"]
+[ext_resource type="Texture2D" uid="uid://ch22vl7yhv0kq" path="res://2-5 tahun/asset 2-5 tahun/lemak.png" id="5_gfap7"]
+[ext_resource type="Texture2D" uid="uid://cfkobpdjtd7t1" path="res://2-5 tahun/asset 2-5 tahun/vitamin mineral.png" id="6_pbpmb"]
+[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="6_vibyw"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_2c0d0")
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(269.25, 479)
@@ -48,4 +49,5 @@ offset_right = 498.0
 offset_bottom = 874.0
 icon = ExtResource("6_vibyw")
 flat = true
-script = ExtResource("7_nhflg")
+
+[connection signal="pressed" from="Button 7" to="." method="_on_button_7_pressed"]

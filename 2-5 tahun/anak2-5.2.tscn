@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh6xv8euvel6k"]
+[gd_scene load_steps=7 format=3 uid="uid://dh6xv8euvel6k"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_vqhb6"]
-[ext_resource type="Texture2D" uid="uid://o18ba7ygim5u" path="res://asset 2-5 tahun/makanan.png" id="2_32uir"]
-[ext_resource type="Texture2D" uid="uid://4solbunuouad" path="res://asset 2-5 tahun/Gizi seimbang.png" id="3_t5ixu"]
-[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://asset 2-5 tahun/button.png" id="4_w7kjx"]
+[ext_resource type="Script" path="res://2-5 tahun/anak2-5.2.gd" id="1_mqypk"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_vqhb6"]
+[ext_resource type="Texture2D" uid="uid://o18ba7ygim5u" path="res://2-5 tahun/asset 2-5 tahun/makanan.png" id="2_32uir"]
+[ext_resource type="Texture2D" uid="uid://4solbunuouad" path="res://2-5 tahun/asset 2-5 tahun/Gizi seimbang.png" id="3_t5ixu"]
+[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="4_w7kjx"]
 
 [sub_resource type="GDScript" id="GDScript_5ew50"]
 script/source = "extends Button
@@ -20,6 +21,7 @@ func _process(delta):
 "
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_mqypk")
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(268.75, 480.5)
@@ -43,3 +45,5 @@ offset_bottom = 874.0
 icon = ExtResource("4_w7kjx")
 flat = true
 script = SubResource("GDScript_5ew50")
+
+[connection signal="pressed" from="Button 3" to="." method="_on_button_3_pressed"]
