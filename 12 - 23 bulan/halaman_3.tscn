@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dtsmvxq7da5d6"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_t0mlx"]
+[ext_resource type="Script" path="res://12 - 23 bulan/halaman_3.gd" id="1_u47c8"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="2_i6y1x"]
+[ext_resource type="Texture2D" uid="uid://c2ywd5owb2dyr" path="res://asset 8 - 11 bulan/4kulkas.png" id="3_th0kv"]
+[ext_resource type="Texture2D" uid="uid://c00u242ul8ckd" path="res://12 - 23 bulan/ayam 1123.png" id="4_jyi45"]
+[ext_resource type="Texture2D" uid="uid://c274by23g38lj" path="res://12 - 23 bulan/nasi 1123.png" id="5_ibgcb"]
+[ext_resource type="Texture2D" uid="uid://dknrjyyk3mnmf" path="res://12 - 23 bulan/sayur 1123.png" id="6_4gpsd"]
+
+[node name="halaman_3" type="Node2D"]
+script = ExtResource("1_u47c8")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(269.25, 478)
+scale = Vector2(1.35242, 1.11972)
+texture = ExtResource("1_t0mlx")
+
+[node name="4Kulkas" type="Sprite2D" parent="."]
+position = Vector2(264.25, 467.75)
+scale = Vector2(1.46331, 1.40963)
+texture = ExtResource("3_th0kv")
+
+[node name="Ayam1123" type="Sprite2D" parent="."]
+position = Vector2(182, 187)
+scale = Vector2(0.136574, 0.11713)
+texture = ExtResource("4_jyi45")
+
+[node name="Nasi1123" type="Sprite2D" parent="."]
+position = Vector2(179.125, 405.5)
+scale = Vector2(0.134954, 0.134259)
+texture = ExtResource("5_ibgcb")
+
+[node name="Sayur1123" type="Sprite2D" parent="."]
+position = Vector2(352, 304)
+scale = Vector2(0.165741, 0.156019)
+texture = ExtResource("6_4gpsd")
+
+[node name="nest to food" type="TouchScreenButton" parent="."]
+
+[node name="next to food" type="Button" parent="nest to food"]
+offset_left = 228.0
+offset_top = 821.0
+offset_right = 322.0
+offset_bottom = 942.0
+icon = ExtResource("2_i6y1x")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="nest to food/next to food" to="." method="_on_next_to_food_pressed"]

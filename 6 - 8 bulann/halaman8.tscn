@@ -11,10 +11,25 @@ position = Vector2(269.75, 480.5)
 scale = Vector2(1.3855, 1.14202)
 texture = ExtResource("1_tj22m")
 
-[node name="Selesai" type="Sprite2D" parent="."]
-position = Vector2(269, 425)
-texture = ExtResource("2_dclpo")
+[node name="selesai" type="TouchScreenButton" parent="."]
 
-[node name="Button-keluar" type="Sprite2D" parent="."]
-position = Vector2(264, 551)
-texture = ExtResource("3_841h7")
+[node name="selesai" type="Button" parent="selesai"]
+offset_left = 114.0
+offset_top = 335.0
+offset_right = 404.0
+offset_bottom = 612.0
+icon = ExtResource("2_dclpo")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="keluar" type="TouchScreenButton" parent="."]
+
+[node name="keluar" type="Button" parent="keluar"]
+offset_left = 121.0
+offset_top = 534.0
+offset_right = 396.0
+offset_bottom = 652.0
+icon = ExtResource("3_841h7")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true

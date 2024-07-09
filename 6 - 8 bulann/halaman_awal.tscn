@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cnlpeekh5tj8o"]
+[gd_scene load_steps=11 format=3 uid="uid://c42na8kwj4bre"]
 
-[ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset awal/Awal.png" id="2_qhov3"]
-[ext_resource type="Texture2D" uid="uid://bq4xs4u7n0llr" path="res://asset awal/light2.png" id="3_eug5t"]
-[ext_resource type="Texture2D" uid="uid://s0mnjdpuco6p" path="res://asset awal/light1.png" id="4_fficf"]
-[ext_resource type="Texture2D" uid="uid://kp5jx5cubswf" path="res://asset awal/studicase9-11.png" id="5_e3dou"]
+[ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset awal/Awal.png" id="1_2sg2o"]
+[ext_resource type="Texture2D" uid="uid://bq4xs4u7n0llr" path="res://asset awal/light2.png" id="2_13mvp"]
+[ext_resource type="Texture2D" uid="uid://s0mnjdpuco6p" path="res://asset awal/light1.png" id="3_k6lh5"]
+[ext_resource type="Texture2D" uid="uid://bd2l64wmrd6d6" path="res://11 teks.png" id="4_q4c8p"]
 
 [sub_resource type="Animation" id="Animation_ubfhx"]
 length = 2.0
@@ -86,18 +86,18 @@ _data = {
 [node name="backgroundkuning" type="Sprite2D" parent="."]
 position = Vector2(272, 492)
 scale = Vector2(1.37844, 1.1824)
-texture = ExtResource("2_qhov3")
+texture = ExtResource("1_2sg2o")
 
 [node name="3" type="Sprite2D" parent="."]
 position = Vector2(268, 490)
 rotation = 3.14159
 scale = Vector2(1.36005, 1.36005)
-texture = ExtResource("3_eug5t")
+texture = ExtResource("2_13mvp")
 
 [node name="2" type="Sprite2D" parent="."]
 position = Vector2(269, 481)
 scale = Vector2(1.37277, 1.37277)
-texture = ExtResource("4_fficf")
+texture = ExtResource("3_k6lh5")
 
 [node name="shine" type="AnimationPlayer" parent="."]
 libraries = {
@@ -106,9 +106,9 @@ libraries = {
 autoplay = "RESET"
 
 [node name="teks" type="Sprite2D" parent="."]
-position = Vector2(276, 473)
+position = Vector2(274.003, 472.99)
 scale = Vector2(1e-05, 1e-05)
-texture = ExtResource("5_e3dou")
+texture = ExtResource("4_q4c8p")
 
 [node name="teks2" type="AnimationPlayer" parent="."]
 libraries = {
