@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8dk4sqad3rac"]
+[gd_scene load_steps=11 format=3 uid="uid://b8dk4sqad3rac"]
 
 [ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_qurfs"]
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.4.gd" id="1_rye13"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://2-5 tahun/asset 2-5 tahun/air.png" id="6_xyevv"]
 [ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="7_cc3vu"]
 [ext_resource type="Texture2D" uid="uid://d3p6sf0x5gb71" path="res://2-5 tahun/asset 2-5 tahun/soup.png" id="7_lrsvw"]
+[ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton5.gd" id="9_tsich"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_rye13")
@@ -27,23 +28,10 @@ texture = ExtResource("2_sh8r8")
 position = Vector2(267, 788)
 texture = ExtResource("3_qtcuj")
 
-[node name="ikan" type="Sprite2D" parent="."]
-position = Vector2(248, 646)
-texture = ExtResource("4_jc4lm")
+[node name="TouchScreenButton5" type="TouchScreenButton" parent="."]
+script = ExtResource("9_tsich")
 
-[node name="nasi" type="Sprite2D" parent="."]
-position = Vector2(216, 392)
-texture = ExtResource("5_u4nhf")
-
-[node name="air" type="Sprite2D" parent="."]
-position = Vector2(362, 304)
-texture = ExtResource("6_xyevv")
-
-[node name="soup" type="Sprite2D" parent="."]
-position = Vector2(335, 505)
-texture = ExtResource("7_lrsvw")
-
-[node name="Button 5" type="Button" parent="."]
+[node name="Button 5" type="Button" parent="TouchScreenButton5"]
 offset_left = 421.0
 offset_top = 794.0
 offset_right = 498.0
@@ -51,4 +39,57 @@ offset_bottom = 874.0
 icon = ExtResource("7_cc3vu")
 flat = true
 
-[connection signal="pressed" from="Button 5" to="." method="_on_button_5_pressed"]
+[node name="TouchScreenSoup" type="TouchScreenButton" parent="."]
+position = Vector2(336, 545)
+script = ExtResource("9_tsich")
+
+[node name="soup" type="Button" parent="TouchScreenSoup"]
+offset_left = -62.0
+offset_top = -78.0
+offset_right = 78.0
+offset_bottom = 94.0
+icon = ExtResource("7_lrsvw")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenAir" type="TouchScreenButton" parent="."]
+position = Vector2(360, 304)
+script = ExtResource("9_tsich")
+
+[node name="air" type="Button" parent="TouchScreenAir"]
+offset_left = -66.0
+offset_top = -83.0
+offset_right = 65.0
+offset_bottom = 86.0
+icon = ExtResource("6_xyevv")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenNasi" type="TouchScreenButton" parent="."]
+position = Vector2(240, 410)
+script = ExtResource("9_tsich")
+
+[node name="nasi" type="Button" parent="TouchScreenNasi"]
+offset_left = -88.0
+offset_top = -77.0
+offset_right = 86.0
+offset_bottom = 81.0
+icon = ExtResource("5_u4nhf")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenIkan" type="TouchScreenButton" parent="."]
+position = Vector2(213, 666)
+rotation = 1.8326
+script = ExtResource("9_tsich")
+
+[node name="ikan" type="Button" parent="TouchScreenIkan"]
+offset_left = -105.781
+offset_top = -116.595
+offset_right = 66.2186
+offset_bottom = 110.405
+icon = ExtResource("4_jc4lm")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TouchScreenButton5/Button 5" to="." method="_on_button_5_pressed"]
