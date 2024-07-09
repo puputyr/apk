@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://dq0ym4tuk3uen"]
+[gd_scene load_steps=12 format=3 uid="uid://dq0ym4tuk3uen"]
 
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_c7j4q"]
+[ext_resource type="Script" path="res://6 bulan/6Bulan1.1.gd" id="1_kdf2r"]
 [ext_resource type="Texture2D" uid="uid://b2f4e6v0hwidp" path="res://6 bulan/halaman 2/kulkas.png" id="2_4ik73"]
 [ext_resource type="Texture2D" uid="uid://d0yjpxybto60h" path="res://6 bulan/halaman 2/bubble-chat.png" id="3_015c6"]
 [ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="4_7avc3"]
@@ -12,102 +13,82 @@
 [ext_resource type="Texture2D" uid="uid://df1oshoac455t" path="res://6 bulan/halaman 2/6.png" id="9_gbig4"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_kdf2r")
 
 [node name="background" type="Sprite2D" parent="."]
-position = Vector2(539, 960.5)
-scale = Vector2(2.74809, 2.25704)
+position = Vector2(277, 488.5)
+scale = Vector2(1.41476, 1.14906)
 texture = ExtResource("1_c7j4q")
 
-[node name="kulkas" type="Sprite2D" parent="."]
-position = Vector2(494.246, 738)
-scale = Vector2(1.06527, 1.13248)
-texture = ExtResource("2_4ik73")
-
 [node name="kulkas2" type="Sprite2D" parent="."]
-position = Vector2(494.246, 738)
-scale = Vector2(1.06527, 1.13248)
+position = Vector2(250.5, 405.73)
+scale = Vector2(0.610185, 0.633833)
 texture = ExtResource("2_4ik73")
 
 [node name="Bubble-chat" type="Sprite2D" parent="."]
-position = Vector2(349.246, 1373)
-scale = Vector2(2.2, 2.34063)
+position = Vector2(166, 713)
+scale = Vector2(0.97435, 1.04687)
 texture = ExtResource("3_015c6")
 
 [node name="lanjut" type="Button" parent="."]
-offset_left = 438.0
-offset_top = 1530.0
-offset_right = 656.0
-offset_bottom = 1736.0
+offset_left = 221.0
+offset_top = 780.0
+offset_right = 322.0
+offset_bottom = 891.0
 icon = ExtResource("4_7avc3")
 flat = true
 expand_icon = true
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -9.75421
-offset_top = -133.0
-offset_right = 30.2458
-offset_bottom = -93.0
-
-[node name="susu-p" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 355.0
-offset_top = 422.0
-offset_right = 498.0
-offset_bottom = 578.0
+[node name="susu-p" type="Button" parent="."]
+offset_left = 157.0
+offset_top = 159.0
+offset_right = 242.0
+offset_bottom = 244.0
 icon = ExtResource("4_oxjuj")
 flat = true
 expand_icon = true
 
-[node name="susu-k" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 457.0
-offset_top = 424.0
-offset_right = 600.0
-offset_bottom = 580.0
+[node name="susu-k" type="Button" parent="."]
+offset_left = 221.0
+offset_top = 158.0
+offset_right = 308.0
+offset_bottom = 248.0
 icon = ExtResource("5_0a7h4")
 flat = true
 expand_icon = true
 
-[node name="susu-c" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 398.0
-offset_top = 1003.0
-offset_right = 580.0
-offset_bottom = 1209.0
+[node name="susu-c" type="Button" parent="."]
+offset_left = 199.0
+offset_top = 469.0
+offset_right = 307.0
+offset_bottom = 594.0
 icon = ExtResource("6_itd2b")
 flat = true
 expand_icon = true
 
-[node name="yogurt" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 179.0
-offset_top = 1010.0
-offset_right = 364.0
-offset_bottom = 1203.0
+[node name="yogurt" type="Button" parent="."]
+offset_left = 56.2455
+offset_top = 485.0
+offset_right = 154.246
+offset_bottom = 583.0
 icon = ExtResource("7_ql1ko")
 flat = true
 expand_icon = true
 
-[node name="susu-bayi" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 576.0
-offset_top = 938.0
-offset_right = 751.0
-offset_bottom = 1138.0
+[node name="susu-bayi" type="Button" parent="."]
+offset_left = 293.0
+offset_top = 448.0
+offset_right = 392.0
+offset_bottom = 551.0
 icon = ExtResource("8_y36xq")
 flat = true
 expand_icon = true
 
-[node name="susu-pu" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 713.0
-offset_top = 962.0
-offset_right = 883.0
-offset_bottom = 1138.0
+[node name="susu-pu" type="Button" parent="."]
+offset_left = 362.0
+offset_top = 453.0
+offset_right = 460.0
+offset_bottom = 560.0
 icon = ExtResource("9_gbig4")
 flat = true
 expand_icon = true
-
-[node name="Popup" type="Popup" parent="."]

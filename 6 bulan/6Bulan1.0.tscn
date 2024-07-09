@@ -6,13 +6,13 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="background" type="Sprite2D" parent="."]
-position = Vector2(539.25, 959.5)
-scale = Vector2(2.74682, 2.25469)
+position = Vector2(270.25, 480.501)
+scale = Vector2(1.37786, 1.13028)
 texture = ExtResource("1_mid07")
 
 [node name="banner" type="Sprite2D" parent="."]
-position = Vector2(532, 954)
-scale = Vector2(2.74682, 2.64017)
+position = Vector2(265, 493)
+scale = Vector2(1.43029, 1.31068)
 texture = ExtResource("2_82s7e")
 
 [node name="Button" type="Button" parent="."]
