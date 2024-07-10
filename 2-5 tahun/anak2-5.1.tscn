@@ -1,10 +1,42 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjhljp8ttgivu"]
+[gd_scene load_steps=13 format=3 uid="uid://cjhljp8ttgivu"]
 
 [ext_resource type="Texture2D" uid="uid://2ejvr5awiwww" path="res://2-5 tahun/asset 2-5 tahun/bg.png" id="1_y8b35"]
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.1.gd" id="1_ye3r6"]
 [ext_resource type="Texture2D" uid="uid://chvealhqgeu1s" path="res://2-5 tahun/asset 2-5 tahun/anak.png" id="2_fts16"]
 [ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="3_wks2o"]
 [ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton.gd" id="4_v2tbp"]
+[ext_resource type="Texture2D" uid="uid://b5ryqd3v4fm2l" path="res://Frame Animation/2 - 5 Tahun Asset/1.png" id="6_5oanp"]
+[ext_resource type="Texture2D" uid="uid://bn5nf3edg4dtr" path="res://Frame Animation/2 - 5 Tahun Asset/2.png" id="7_uovps"]
+[ext_resource type="Texture2D" uid="uid://t5a8rgeff53p" path="res://Frame Animation/2 - 5 Tahun Asset/3.png" id="8_fbvay"]
+[ext_resource type="Texture2D" uid="uid://bwv02sovgsprv" path="res://Frame Animation/2 - 5 Tahun Asset/4.png" id="9_ye3q1"]
+[ext_resource type="Texture2D" uid="uid://c4klyjkwsm5of" path="res://Frame Animation/2 - 5 Tahun Asset/5.png" id="10_pfcai"]
+[ext_resource type="Texture2D" uid="uid://cvqs45r4o8puk" path="res://Frame Animation/2 - 5 Tahun Asset/6.png" id="11_mllju"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r7n3g"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("6_5oanp")
+}, {
+"duration": 5.0,
+"texture": ExtResource("7_uovps")
+}, {
+"duration": 5.0,
+"texture": ExtResource("8_fbvay")
+}, {
+"duration": 5.0,
+"texture": ExtResource("9_ye3q1")
+}, {
+"duration": 5.0,
+"texture": ExtResource("10_pfcai")
+}, {
+"duration": 5.0,
+"texture": ExtResource("11_mllju")
+}],
+"loop": true,
+"name": &"2 - 5 Tahun",
+"speed": 6.0
+}]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ye3r6")
@@ -15,6 +47,7 @@ scale = Vector2(1.36641, 1.12441)
 texture = ExtResource("1_y8b35")
 
 [node name="Anak" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(244, 640)
 texture = ExtResource("2_fts16")
 
@@ -30,5 +63,12 @@ action_mode = 0
 icon = ExtResource("3_wks2o")
 flat = true
 expand_icon = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(241, 636)
+scale = Vector2(0.712857, 0.658143)
+sprite_frames = SubResource("SpriteFrames_r7n3g")
+animation = &"2 - 5 Tahun"
+frame_progress = 0.879616
 
 [connection signal="pressed" from="TouchScreenButton2/Button 2" to="." method="_on_button_2_pressed"]

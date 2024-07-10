@@ -1,12 +1,56 @@
-[gd_scene load_steps=8 format=3 uid="uid://bvqqcprynpyug"]
+[gd_scene load_steps=18 format=3 uid="uid://bvqqcprynpyug"]
 
 [ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan/halaman 2/background.png" id="1_0166j"]
 [ext_resource type="Script" path="res://6 bulan/6Bulan1.2.gd" id="1_aab7h"]
 [ext_resource type="Texture2D" uid="uid://dwr8vafa3fppm" path="res://6 bulan/halaman 2/5.png" id="2_5wwb3"]
 [ext_resource type="Texture2D" uid="uid://cxj83mvu73sd7" path="res://6 bulan/halaman 2/bubble-chat2.png" id="3_hacnh"]
+[ext_resource type="Texture2D" uid="uid://doep2eskqmuxm" path="res://Frame Animation/Asset susu/Proyek 24_2.png" id="3_vmg0e"]
 [ext_resource type="Texture2D" uid="uid://cnn46xrvhme8" path="res://6 bulan/halaman 2/blink.png" id="4_8til5"]
+[ext_resource type="Texture2D" uid="uid://fw357ckcknth" path="res://Frame Animation/Asset susu/Proyek 24_3.png" id="4_u45ef"]
 [ext_resource type="Texture2D" uid="uid://bnai2b87x6j03" path="res://6 bulan/halaman 2/Light.png" id="5_eaokd"]
+[ext_resource type="Texture2D" uid="uid://c1c72qyc6rbp1" path="res://Frame Animation/Asset susu/Proyek 24_4.png" id="5_y3i5h"]
 [ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan/button.png" id="6_6dj5v"]
+[ext_resource type="Texture2D" uid="uid://dor44ukg4cjgr" path="res://Frame Animation/Asset susu/Proyek 24_5.png" id="6_b01fd"]
+[ext_resource type="Texture2D" uid="uid://dic0pjhvbrnl0" path="res://Frame Animation/Asset susu/Proyek 24_6.png" id="7_aojf3"]
+[ext_resource type="Texture2D" uid="uid://iekkyum6kd4u" path="res://Frame Animation/Asset susu/Proyek 24_7.png" id="8_ugmu8"]
+[ext_resource type="Texture2D" uid="uid://dw4lhc0mmgxa1" path="res://Frame Animation/Asset susu/Proyek 24_8.png" id="9_ufhc4"]
+[ext_resource type="Texture2D" uid="uid://chc3h1ly4qk7b" path="res://Frame Animation/Asset susu/Proyek 24_9.png" id="10_cgi3k"]
+[ext_resource type="Texture2D" uid="uid://nkqtpxoyhvv4" path="res://Frame Animation/Asset susu/Proyek 24_10.png" id="11_xt8y0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_un1sx"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("3_vmg0e")
+}, {
+"duration": 3.0,
+"texture": ExtResource("4_u45ef")
+}, {
+"duration": 3.0,
+"texture": ExtResource("5_y3i5h")
+}, {
+"duration": 3.0,
+"texture": ExtResource("6_b01fd")
+}, {
+"duration": 3.0,
+"texture": ExtResource("7_aojf3")
+}, {
+"duration": 3.0,
+"texture": ExtResource("8_ugmu8")
+}, {
+"duration": 3.0,
+"texture": ExtResource("9_ufhc4")
+}, {
+"duration": 3.0,
+"texture": ExtResource("10_cgi3k")
+}, {
+"duration": 3.0,
+"texture": ExtResource("11_xt8y0")
+}],
+"loop": true,
+"name": &"susu",
+"speed": 9.0
+}]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_aab7h")
@@ -16,7 +60,15 @@ position = Vector2(272, 481.5)
 scale = Vector2(1.38931, 1.13263)
 texture = ExtResource("1_0166j")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(270, 348)
+scale = Vector2(0.207502, 0.224848)
+sprite_frames = SubResource("SpriteFrames_un1sx")
+animation = &"susu"
+frame_progress = 0.529032
+
 [node name="susu" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(258, 325)
 scale = Vector2(0.424768, 0.483565)
 texture = ExtResource("2_5wwb3")
