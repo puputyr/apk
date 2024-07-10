@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://b06e6ij0mt0k8"]
+[gd_scene load_steps=12 format=3 uid="uid://b06e6ij0mt0k8"]
 
 [ext_resource type="Script" path="res://6 bulan/6Bulan1.0.gd" id="1_55ry0"]
 [ext_resource type="Texture2D" uid="uid://cjjtw0ojdq44l" path="res://6 bulan/halaman 1/banner-1.png" id="2_82s7e"]
 [ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset 9-11/Awal.png" id="2_vr4sx"]
 [ext_resource type="Texture2D" uid="uid://fyjnc7vtx0yy" path="res://asset 9-11/shine.png" id="3_dnchr"]
+[ext_resource type="AudioStream" uid="uid://dqx2vrkbqlt6e" path="res://Voice 6 bulan/6_1.mp3" id="5_arip0"]
 
 [sub_resource type="Animation" id="Animation_ubfhx"]
 length = 0.001
@@ -113,5 +114,9 @@ autoplay = "teks"
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_arip0")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

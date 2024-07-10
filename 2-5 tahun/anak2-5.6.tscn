@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5eoi1f37v4ig"]
+[gd_scene load_steps=11 format=3 uid="uid://b5eoi1f37v4ig"]
 
 [ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_1qxr6"]
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.6.gd" id="1_2c0d0"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cfkobpdjtd7t1" path="res://2-5 tahun/asset 2-5 tahun/vitamin mineral.png" id="6_pbpmb"]
 [ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="6_vibyw"]
 [ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton7.gd" id="8_ty6b4"]
+[ext_resource type="AudioStream" uid="uid://cqp271lhpmwqs" path="res://Voice 2 - 5 tahun/INFORMASI GIZI ( 2 - 5 tahun).mp3" id="10_qf51e"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_2c0d0")
@@ -53,5 +54,9 @@ offset_right = 498.0
 offset_bottom = 874.0
 icon = ExtResource("6_vibyw")
 flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_qf51e")
+autoplay = true
 
 [connection signal="pressed" from="TouchScreenButton7/Button 7" to="." method="_on_button_7_pressed"]
