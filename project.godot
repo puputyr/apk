@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="8-12 bulan"
-run/main_scene="res://scene/bissmillah_start.tscn"
+run/main_scene="res://START/scene/bissmillah_start.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://Global.gd"
+Global="*res://9-11 bulan/Global.gd"
 
 [display]
 

@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkk22ll4o2bpn"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_13x5v"]
+[ext_resource type="Texture2D" uid="uid://b5vwtj4m251j" path="res://asset 8 - 11 bulan/5kompor.png" id="2_44tp3"]
+[ext_resource type="Texture2D" uid="uid://df2ythfj5q5vu" path="res://asset 8 - 11 bulan/5panci.png" id="3_uvm2b"]
+[ext_resource type="Texture2D" uid="uid://bgn4ybkqq1whb" path="res://asset 8 - 11 bulan/5button masak.png" id="4_mb0rt"]
+
+[node name="halaman5" type="Node2D"]
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(272.75, 477)
+scale = Vector2(1.36514, 1.12441)
+texture = ExtResource("1_13x5v")
+
+[node name="Kompor" type="Sprite2D" parent="."]
+position = Vector2(265, 590)
+scale = Vector2(0.491088, 0.412731)
+texture = ExtResource("2_44tp3")
+
+[node name="Panci" type="Sprite2D" parent="."]
+position = Vector2(296, 355)
+scale = Vector2(0.512037, 0.622222)
+texture = ExtResource("3_uvm2b")
+
+[node name="next to food2" type="TouchScreenButton" parent="."]
+
+[node name="next to food" type="Button" parent="next to food2"]
+offset_left = 126.0
+offset_top = 748.0
+offset_right = 443.0
+offset_bottom = 903.0
+icon = ExtResource("4_mb0rt")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next to food2/next to food" to="." method="_on_next_to_food_pressed"]

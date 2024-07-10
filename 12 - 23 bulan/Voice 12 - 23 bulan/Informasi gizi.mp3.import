@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7vjjjtc22fsn"
+path="res://.godot/imported/Informasi gizi.mp3-55aa737111d4bd15fe70193f3831cc98.mp3str"
+
+[deps]
+
+source_file="res://12 - 23 bulan/Voice 12 - 23 bulan/Informasi gizi.mp3"
+dest_files=["res://.godot/imported/Informasi gizi.mp3-55aa737111d4bd15fe70193f3831cc98.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_t0mlx"]
 [ext_resource type="Script" path="res://12 - 23 bulan/halaman_3.gd" id="1_u47c8"]
-[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="2_i6y1x"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://START/scene/asset/button.png" id="2_i6y1x"]
 [ext_resource type="Texture2D" uid="uid://c2ywd5owb2dyr" path="res://asset 8 - 11 bulan/4kulkas.png" id="3_th0kv"]
 [ext_resource type="Texture2D" uid="uid://c00u242ul8ckd" path="res://12 - 23 bulan/ayam 1123.png" id="4_jyi45"]
 [ext_resource type="Texture2D" uid="uid://c274by23g38lj" path="res://12 - 23 bulan/nasi 1123.png" id="5_ibgcb"]

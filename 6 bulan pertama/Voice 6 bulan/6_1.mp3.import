@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqx2vrkbqlt6e"
+path="res://.godot/imported/6_1.mp3-136b6ac17cd5090acce1d478d74dd138.mp3str"
+
+[deps]
+
+source_file="res://6 bulan pertama/Voice 6 bulan/6_1.mp3"
+dest_files=["res://.godot/imported/6_1.mp3-136b6ac17cd5090acce1d478d74dd138.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

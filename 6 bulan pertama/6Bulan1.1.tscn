@@ -1,0 +1,169 @@
+[gd_scene load_steps=21 format=3 uid="uid://dq0ym4tuk3uen"]
+
+[ext_resource type="Texture2D" uid="uid://xyuo15fljeug" path="res://6 bulan pertama/halaman 2/background.png" id="1_c7j4q"]
+[ext_resource type="Script" path="res://6 bulan pertama/6Bulan1.1.gd" id="1_kdf2r"]
+[ext_resource type="Texture2D" uid="uid://b2f4e6v0hwidp" path="res://6 bulan pertama/halaman 2/kulkas.png" id="2_4ik73"]
+[ext_resource type="Texture2D" uid="uid://d0yjpxybto60h" path="res://6 bulan pertama/halaman 2/bubble-chat.png" id="3_015c6"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan pertama/button.png" id="4_7avc3"]
+[ext_resource type="Texture2D" uid="uid://bs06sdu5m8kcn" path="res://6 bulan pertama/halaman 2/1.png" id="4_oxjuj"]
+[ext_resource type="Texture2D" uid="uid://d1odlrnentgev" path="res://6 bulan pertama/halaman 2/2.png" id="5_0a7h4"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton.gd" id="5_b23fr"]
+[ext_resource type="Texture2D" uid="uid://urb0al6wld6i" path="res://6 bulan pertama/halaman 2/Salah.png" id="6_8yk76"]
+[ext_resource type="Texture2D" uid="uid://bocd27xov47ix" path="res://6 bulan pertama/halaman 2/4.png" id="6_itd2b"]
+[ext_resource type="Texture2D" uid="uid://iwm8tnn06g7v" path="res://6 bulan pertama/halaman 2/3.png" id="7_ql1ko"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton3.gd" id="8_t7vfu"]
+[ext_resource type="Texture2D" uid="uid://dwr8vafa3fppm" path="res://6 bulan pertama/halaman 2/5.png" id="8_y36xq"]
+[ext_resource type="Texture2D" uid="uid://df1oshoac455t" path="res://6 bulan pertama/halaman 2/6.png" id="9_gbig4"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton4.gd" id="10_6gmgi"]
+[ext_resource type="Texture2D" uid="uid://f1vtofc3x4sq" path="res://6 bulan pertama/halaman 2/Ceklist-benar.png" id="10_8plwx"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton7.gd" id="12_kdpok"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton5.gd" id="12_r87ei"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton6.gd" id="14_6ngpm"]
+[ext_resource type="Texture2D" uid="uid://c7tdosr0peo02" path="res://6 bulan pertama/halaman 2/reload.png" id="14_ltsy1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kdf2r")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(277, 488.5)
+scale = Vector2(1.41476, 1.14906)
+texture = ExtResource("1_c7j4q")
+
+[node name="kulkas2" type="Sprite2D" parent="."]
+position = Vector2(250.5, 405.73)
+scale = Vector2(0.610185, 0.633833)
+texture = ExtResource("2_4ik73")
+
+[node name="Bubble-chat" type="Sprite2D" parent="."]
+position = Vector2(166, 713)
+scale = Vector2(0.97435, 1.04687)
+texture = ExtResource("3_015c6")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+script = ExtResource("5_b23fr")
+
+[node name="susu-pu" type="Button" parent="TouchScreenButton"]
+offset_left = 362.0
+offset_top = 453.0
+offset_right = 460.0
+offset_bottom = 560.0
+icon = ExtResource("9_gbig4")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+
+[node name="susu-bayi" type="Button" parent="TouchScreenButton2"]
+offset_left = 306.0
+offset_top = 442.0
+offset_right = 405.0
+offset_bottom = 545.0
+icon = ExtResource("8_y36xq")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="."]
+script = ExtResource("8_t7vfu")
+
+[node name="yogurt" type="Button" parent="TouchScreenButton3"]
+offset_left = 56.2455
+offset_top = 485.0
+offset_right = 154.246
+offset_bottom = 583.0
+icon = ExtResource("7_ql1ko")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="."]
+script = ExtResource("10_6gmgi")
+
+[node name="susu-c" type="Button" parent="TouchScreenButton4"]
+offset_left = 199.0
+offset_top = 469.0
+offset_right = 307.0
+offset_bottom = 594.0
+icon = ExtResource("6_itd2b")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenButton5" type="TouchScreenButton" parent="."]
+script = ExtResource("12_r87ei")
+
+[node name="susu-k" type="Button" parent="TouchScreenButton5"]
+offset_left = 221.0
+offset_top = 158.0
+offset_right = 308.0
+offset_bottom = 248.0
+icon = ExtResource("5_0a7h4")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenButton6" type="TouchScreenButton" parent="."]
+script = ExtResource("14_6ngpm")
+
+[node name="susu-p" type="Button" parent="TouchScreenButton6"]
+offset_left = 157.0
+offset_top = 159.0
+offset_right = 242.0
+offset_bottom = 244.0
+icon = ExtResource("4_oxjuj")
+flat = true
+expand_icon = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 286.935
+offset_top = 437.754
+offset_right = 326.935
+offset_bottom = 477.754
+
+[node name="benar" type="Sprite2D" parent="Control"]
+visible = false
+scale = Vector2(0.837905, 0.853927)
+texture = ExtResource("10_8plwx")
+
+[node name="salah" type="Sprite2D" parent="Control"]
+visible = false
+scale = Vector2(0.837905, 0.853927)
+texture = ExtResource("6_8yk76")
+
+[node name="TouchScreenButton7" type="TouchScreenButton" parent="Control"]
+position = Vector2(-286.935, -437.754)
+script = ExtResource("12_kdpok")
+
+[node name="replay" type="Button" parent="Control/TouchScreenButton7"]
+visible = false
+offset_left = 185.0
+offset_top = 741.0
+offset_right = 359.0
+offset_bottom = 932.0
+icon = ExtResource("14_ltsy1")
+flat = true
+expand_icon = true
+
+[node name="lanjut" type="Button" parent="Control/TouchScreenButton7"]
+visible = false
+anchors_preset = -1
+anchor_left = 2.277
+anchor_top = -3.869
+anchor_right = 2.277
+anchor_bottom = -3.869
+offset_left = 217.0
+offset_top = 764.0
+offset_right = 342.0
+offset_bottom = 877.0
+keep_pressed_outside = true
+icon = ExtResource("4_7avc3")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TouchScreenButton/susu-pu" to="." method="_on_susupu_pressed"]
+[connection signal="released" from="TouchScreenButton2" to="." method="_on_touch_screen_button_2_released"]
+[connection signal="pressed" from="TouchScreenButton2/susu-bayi" to="." method="_on_susubayi_pressed"]
+[connection signal="pressed" from="TouchScreenButton3/yogurt" to="." method="_on_yogurt_pressed"]
+[connection signal="pressed" from="TouchScreenButton4/susu-c" to="." method="_on_susuc_pressed"]
+[connection signal="pressed" from="TouchScreenButton5/susu-k" to="." method="_on_susuk_pressed"]
+[connection signal="pressed" from="TouchScreenButton6/susu-p" to="." method="_on_susup_pressed"]
+[connection signal="pressed" from="Control/TouchScreenButton7/replay" to="Control/TouchScreenButton7" method="_on_lanjut_pressed"]
+[connection signal="pressed" from="Control/TouchScreenButton7/lanjut" to="." method="_on_button_2_pressed"]

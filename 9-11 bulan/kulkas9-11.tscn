@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://bh0hm5ts8p6xv"]
+
+[ext_resource type="Script" path="res://9-11 bulan/ke masak.gd" id="1_u1pke"]
+[ext_resource type="Texture2D" uid="uid://cf1de0hkgisdv" path="res://asset 9-11/bg biru.png" id="2_jfhr5"]
+[ext_resource type="Texture2D" uid="uid://5l1j0ftso5qv" path="res://asset 9-11/kulkas.png" id="3_3howe"]
+[ext_resource type="Texture2D" uid="uid://dumhylfxto2cq" path="res://asset 9-11/tempe.png" id="4_usk13"]
+[ext_resource type="Texture2D" uid="uid://dl3a42qnm162l" path="res://asset 9-11/ikan.png" id="5_xt7tu"]
+[ext_resource type="Texture2D" uid="uid://opj6r4fwdmj4" path="res://asset 9-11/wortel.png" id="6_fjvbp"]
+[ext_resource type="Texture2D" uid="uid://dv8xg5ajvk51m" path="res://asset 9-11/Beras.png" id="7_j3j25"]
+[ext_resource type="Texture2D" uid="uid://ys4hnt0qa75l" path="res://asset 9-11/minyak kelapa.png" id="8_aut3q"]
+
+[node name="kulkas" type="Node2D"]
+script = ExtResource("1_u1pke")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(278.25, 489.5)
+scale = Vector2(1.52545, 1.19836)
+texture = ExtResource("2_jfhr5")
+
+[node name="bg biru" type="Sprite2D" parent="."]
+position = Vector2(271, 492)
+scale = Vector2(1.68515, 1.68515)
+texture = ExtResource("3_3howe")
+
+[node name="Tempe" type="Sprite2D" parent="."]
+position = Vector2(158, 324)
+texture = ExtResource("4_usk13")
+
+[node name="Ikan" type="Sprite2D" parent="."]
+position = Vector2(182, 197)
+texture = ExtResource("5_xt7tu")
+
+[node name="Wortel" type="Sprite2D" parent="."]
+position = Vector2(385, 466)
+texture = ExtResource("6_fjvbp")
+
+[node name="Beras" type="Sprite2D" parent="."]
+position = Vector2(138, 589)
+texture = ExtResource("7_j3j25")
+
+[node name="MinyakKelapa" type="Sprite2D" parent="."]
+position = Vector2(385, 568)
+texture = ExtResource("8_aut3q")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

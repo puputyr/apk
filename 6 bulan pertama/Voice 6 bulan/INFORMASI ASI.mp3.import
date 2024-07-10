@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cp2quf3p6nivt"
+path="res://.godot/imported/INFORMASI ASI.mp3-fa117732e966e6703efe6cd4b4443c36.mp3str"
+
+[deps]
+
+source_file="res://6 bulan pertama/Voice 6 bulan/INFORMASI ASI.mp3"
+dest_files=["res://.godot/imported/INFORMASI ASI.mp3-fa117732e966e6703efe6cd4b4443c36.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
