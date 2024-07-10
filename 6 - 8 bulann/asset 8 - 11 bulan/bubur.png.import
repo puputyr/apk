@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr02b3acklhvk"
-path="res://.godot/imported/bubur.png-e66182ac8252ad729256c08132290913.ctex"
+path="res://.godot/imported/bubur.png-9cc84bd9414f0ddff05b85b811737307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 8 - 11 bulan/bubur.png"
-dest_files=["res://.godot/imported/bubur.png-e66182ac8252ad729256c08132290913.ctex"]
+source_file="res://6 - 8 bulann/asset 8 - 11 bulan/bubur.png"
+dest_files=["res://.godot/imported/bubur.png-9cc84bd9414f0ddff05b85b811737307.ctex"]
 
 [params]
 

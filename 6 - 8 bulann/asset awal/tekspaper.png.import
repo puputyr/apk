@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c27x5a1qmefjh"
-path="res://.godot/imported/tekspaper.png-6dbdedea50d4bf2692ed94a4e99cbcbb.ctex"
+path="res://.godot/imported/tekspaper.png-4da5e41cbe85d4f48c0430bd17c567ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset awal/tekspaper.png"
-dest_files=["res://.godot/imported/tekspaper.png-6dbdedea50d4bf2692ed94a4e99cbcbb.ctex"]
+source_file="res://6 - 8 bulann/asset awal/tekspaper.png"
+dest_files=["res://.godot/imported/tekspaper.png-4da5e41cbe85d4f48c0430bd17c567ce.ctex"]
 
 [params]
 

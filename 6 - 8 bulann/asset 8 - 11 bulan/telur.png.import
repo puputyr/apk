@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1vnrm6apvoev"
-path="res://.godot/imported/telur.png-f6fae961e8cd744f8e218e7acd5e2fe7.ctex"
+path="res://.godot/imported/telur.png-cdcb66afac4144894d988a2f6e78d4a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset 8 - 11 bulan/telur.png"
-dest_files=["res://.godot/imported/telur.png-f6fae961e8cd744f8e218e7acd5e2fe7.ctex"]
+source_file="res://6 - 8 bulann/asset 8 - 11 bulan/telur.png"
+dest_files=["res://.godot/imported/telur.png-cdcb66afac4144894d988a2f6e78d4a6.ctex"]
 
 [params]
 
