@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://b7a8iqujxrd14"]
 
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.0.gd" id="1_aedih"]
-[ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://asset 9-11/Awal.png" id="2_cmfod"]
-[ext_resource type="Texture2D" uid="uid://fyjnc7vtx0yy" path="res://asset 9-11/shine.png" id="3_eqexe"]
+[ext_resource type="Texture2D" uid="uid://cwhlspuso8q7p" path="res://6 - 8 bulan/asset awal/Awal.png" id="2_cmfod"]
+[ext_resource type="Texture2D" uid="uid://fyjnc7vtx0yy" path="res://6 - 8 bulan/asset awal/shine.png" id="3_eqexe"]
 [ext_resource type="Texture2D" uid="uid://byu8o6ii8qqqi" path="res://2-5 tahun/asset 2-5 tahun/awal.png" id="4_vetx1"]
 
 [sub_resource type="Animation" id="Animation_ubfhx"]

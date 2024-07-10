@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dj1lbrliylvt8"
+path="res://.godot/imported/lagu bayi.wav-c10cd3f193652fffbe88d4a6135b458c.sample"
+
+[deps]
+
+source_file="res://lagu bayi.wav"
+dest_files=["res://.godot/imported/lagu bayi.wav-c10cd3f193652fffbe88d4a6135b458c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=179634
+edit/loop_end=938601
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bp38kd2aik6a7"
+path="res://.godot/imported/baby backsound.mp3-a36d0a4906b91af591f68f53f81f49f8.mp3str"
+
+[deps]
+
+source_file="res://baby backsound.mp3"
+dest_files=["res://.godot/imported/baby backsound.mp3-a36d0a4906b91af591f68f53f81f49f8.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

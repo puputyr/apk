@@ -153,4 +153,5 @@ offset_right = 388.0
 offset_bottom = 506.0
 
 [connection signal="released" from="Control/TouchScreenmulai" to="." method="_on_touch_screenmulai_released"]
+[connection signal="pressed" from="Control/Buttonmulai" to="." method="_on_buttonmulai_pressed"]
 [connection signal="released" from="Control2/TouchScreenquiz" to="." method="_on_touch_screenquiz_released"]
