@@ -13,3 +13,15 @@ func _process(delta):
 
 func _on_button_4_pressed():
 	get_tree().change_scene_to_file("res://2-5 tahun/anak2-5.4.tscn")
+
+
+func _on_buah_pressed():
+	pass # Replace with function body.
+
+
+func _on_nasi_pressed():
+	pass # Replace with function body.
+
+
+func _on_susu_pressed():
+	pass # Replace with function body.

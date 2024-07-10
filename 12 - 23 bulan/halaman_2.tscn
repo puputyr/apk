@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://12 - 23 bulan/halaman_2.gd" id="1_psx00"]
 [ext_resource type="Texture2D" uid="uid://cfgcm3vsfcm74" path="res://asset 8 - 11 bulan/2bg bayi.png" id="2_ee2pn"]
-[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="3_6dr8y"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="3_6dr8y"]
 [ext_resource type="Texture2D" uid="uid://cy2j1m6ovxju1" path="res://12 - 23 bulan/bayi 11 - 23 bulan.png" id="4_alucm"]
 
 [node name="halaman_2" type="Node2D"]

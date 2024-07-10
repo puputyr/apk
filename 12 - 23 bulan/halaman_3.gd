@@ -14,3 +14,15 @@ func _process(delta):
 func _on_next_to_food_pressed():
 	get_tree().change_scene_to_file("res://12 - 23 bulan/halaman_4.tscn")
 	pass # Replace with function body.
+
+
+func _on_nasi_1123_pressed():
+	pass # Replace with function body.
+
+
+func _on_sayur_1123_pressed():
+	pass # Replace with function body.
+
+
+func _on_ayam_1123_pressed():
+	pass # Replace with function body.

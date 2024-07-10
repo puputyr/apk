@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_t0mlx"]
 [ext_resource type="Script" path="res://12 - 23 bulan/halaman_3.gd" id="1_u47c8"]
-[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="2_i6y1x"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="2_i6y1x"]
 [ext_resource type="Texture2D" uid="uid://c2ywd5owb2dyr" path="res://asset 8 - 11 bulan/4kulkas.png" id="3_th0kv"]
 [ext_resource type="Texture2D" uid="uid://c00u242ul8ckd" path="res://12 - 23 bulan/ayam 1123.png" id="4_jyi45"]
 [ext_resource type="Texture2D" uid="uid://c274by23g38lj" path="res://12 - 23 bulan/nasi 1123.png" id="5_ibgcb"]
@@ -21,31 +21,59 @@ position = Vector2(264.25, 467.75)
 scale = Vector2(1.46331, 1.40963)
 texture = ExtResource("3_th0kv")
 
-[node name="Ayam1123" type="Sprite2D" parent="."]
-position = Vector2(182, 187)
-scale = Vector2(0.136574, 0.11713)
-texture = ExtResource("4_jyi45")
-
-[node name="Nasi1123" type="Sprite2D" parent="."]
-position = Vector2(179.125, 405.5)
-scale = Vector2(0.134954, 0.134259)
-texture = ExtResource("5_ibgcb")
-
-[node name="Sayur1123" type="Sprite2D" parent="."]
-position = Vector2(352, 304)
-scale = Vector2(0.165741, 0.156019)
-texture = ExtResource("6_4gpsd")
-
 [node name="nest to food" type="TouchScreenButton" parent="."]
+position = Vector2(281, 889)
 
 [node name="next to food" type="Button" parent="nest to food"]
-offset_left = 228.0
-offset_top = 821.0
-offset_right = 322.0
-offset_bottom = 942.0
+offset_left = -53.0
+offset_top = -68.0
+offset_right = 41.0
+offset_bottom = 53.0
 icon = ExtResource("2_i6y1x")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
+[node name="TouchScreenAyam" type="TouchScreenButton" parent="."]
+position = Vector2(189, 191)
+
+[node name="Ayam1123" type="Button" parent="TouchScreenAyam"]
+offset_left = -84.0
+offset_top = -78.0
+offset_right = 1014.0
+offset_bottom = 1032.0
+scale = Vector2(0.136574, 0.11713)
+icon = ExtResource("4_jyi45")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenSayur" type="TouchScreenButton" parent="."]
+position = Vector2(330, 328)
+
+[node name="Sayur1123" type="Button" parent="TouchScreenSayur"]
+offset_left = -71.0
+offset_top = -105.0
+offset_right = 937.0
+offset_bottom = 933.0
+scale = Vector2(0.165741, 0.156019)
+icon = ExtResource("6_4gpsd")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenNasi" type="TouchScreenButton" parent="."]
+position = Vector2(176, 421)
+
+[node name="Nasi1123" type="Button" parent="TouchScreenNasi"]
+offset_left = -69.0
+offset_top = -79.0
+offset_right = 1019.0
+offset_bottom = 1009.0
+scale = Vector2(0.134954, 0.134259)
+icon = ExtResource("5_ibgcb")
+flat = true
+expand_icon = true
+
 [connection signal="pressed" from="nest to food/next to food" to="." method="_on_next_to_food_pressed"]
+[connection signal="pressed" from="TouchScreenAyam/Ayam1123" to="." method="_on_ayam_1123_pressed"]
+[connection signal="pressed" from="TouchScreenSayur/Sayur1123" to="." method="_on_sayur_1123_pressed"]
+[connection signal="pressed" from="TouchScreenNasi/Nasi1123" to="." method="_on_nasi_1123_pressed"]

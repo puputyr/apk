@@ -75,3 +75,6 @@ flat = true
 expand_icon = true
 
 [connection signal="pressed" from="TouchScreenButton4/Button 4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="TouchScreenBuah/buah" to="." method="_on_buah_pressed"]
+[connection signal="pressed" from="TouchScreenNasi/nasi" to="." method="_on_nasi_pressed"]
+[connection signal="pressed" from="TouchScreenSusu/susu" to="." method="_on_susu_pressed"]

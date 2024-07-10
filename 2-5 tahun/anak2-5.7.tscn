@@ -37,3 +37,5 @@ icon = ExtResource("2_37roy")
 flat = true
 expand_icon = true
 script = SubResource("GDScript_5ew50")
+
+[connection signal="pressed" from="TouchScreenButton8/Button 8" to="TouchScreenButton8" method="_on_button_8_pressed"]

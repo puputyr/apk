@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvh8op5aw7hlr"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_d1xad"]
+[ext_resource type="Script" path="res://halaman6.gd" id="1_hmkoi"]
+[ext_resource type="Texture2D" uid="uid://cqe4m1tqxp3bp" path="res://asset 8 - 11 bulan/6button info.png" id="2_6m1qp"]
+[ext_resource type="Texture2D" uid="uid://cq15v82us8agb" path="res://asset 8 - 11 bulan/6bubur mpasi.png" id="3_ef1qh"]
+
+[node name="halaman6" type="Node2D"]
+script = ExtResource("1_hmkoi")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(268.75, 477)
+scale = Vector2(1.3855, 1.12207)
+texture = ExtResource("1_d1xad")
+
+[node name="BuburMpasi" type="Sprite2D" parent="."]
+position = Vector2(274, 439)
+scale = Vector2(0.389815, 0.386574)
+texture = ExtResource("3_ef1qh")
+
+[node name="next to info gizi" type="TouchScreenButton" parent="."]
+
+[node name="next to info gizi" type="Button" parent="next to info gizi"]
+offset_left = 108.0
+offset_top = 632.0
+offset_right = 442.0
+offset_bottom = 814.0
+icon = ExtResource("2_6m1qp")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next to info gizi/next to info gizi" to="." method="_on_next_to_info_gizi_pressed"]

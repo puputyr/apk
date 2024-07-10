@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_a3c5v"]
 [ext_resource type="Script" path="res://12 - 23 bulan/halaman_6.gd" id="1_sc0w0"]
 [ext_resource type="Texture2D" uid="uid://bytheaepr8s4w" path="res://asset 8 - 11 bulan/informasi gizi group.png" id="2_wmpf5"]
-[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="3_4ysvv"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="3_4ysvv"]
 [ext_resource type="Texture2D" uid="uid://jerm2mc6apev" path="res://12 - 23 bulan/gizi 11 - 23.png" id="4_oujta"]
 
 [node name="halaman_6" type="Node2D"]
