@@ -1,14 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://cxipwksp8lija"]
+[gd_scene load_steps=14 format=3 uid="uid://cxipwksp8lija"]
 
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.3.gd" id="1_3b3d1"]
 [ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_y6yli"]
 [ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://2-5 tahun/asset 2-5 tahun/meja.png" id="2_tuwb2"]
 [ext_resource type="Texture2D" uid="uid://de26iskhay5q2" path="res://2-5 tahun/asset 2-5 tahun/jam.png" id="3_1ran0"]
-[ext_resource type="Texture2D" uid="uid://dpjravxcesnpc" path="res://2-5 tahun/asset 2-5 tahun/buah.png" id="4_5riw1"]
 [ext_resource type="Texture2D" uid="uid://dq5pfjrben4ci" path="res://2-5 tahun/asset 2-5 tahun/nasi.png" id="5_p8w0v"]
-[ext_resource type="Texture2D" uid="uid://bqr5c8tcq40t8" path="res://2-5 tahun/asset 2-5 tahun/susu.png" id="6_6lo8h"]
-[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="7_pxmq2"]
+[ext_resource type="Texture2D" uid="uid://p6wugno0oqfy" path="res://asset makanan tidak sehat/1 daging kaleng.png" id="6_mrqmw"]
 [ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton4.gd" id="8_od0qy"]
+[ext_resource type="Texture2D" uid="uid://bb5a8mcbcx65s" path="res://asset makanan tidak sehat/0 burger.png" id="9_cvapa"]
+[ext_resource type="Texture2D" uid="uid://f1vtofc3x4sq" path="res://6 bulan pertama/halaman 2/Ceklist-benar.png" id="10_vmk6j"]
+[ext_resource type="Texture2D" uid="uid://urb0al6wld6i" path="res://6 bulan pertama/halaman 2/Salah.png" id="11_46x6g"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton7.gd" id="12_e81ef"]
+[ext_resource type="Texture2D" uid="uid://c7tdosr0peo02" path="res://6 bulan pertama/halaman 2/reload.png" id="13_t6t6a"]
+[ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan pertama/button.png" id="14_hyyxu"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_3b3d1")
@@ -27,26 +31,15 @@ texture = ExtResource("2_tuwb2")
 position = Vector2(267, 788)
 texture = ExtResource("3_1ran0")
 
-[node name="TouchScreenButton4" type="TouchScreenButton" parent="."]
+[node name="TouchScreenSpam" type="TouchScreenButton" parent="."]
 script = ExtResource("8_od0qy")
 
-[node name="Button 4" type="Button" parent="TouchScreenButton4"]
-offset_left = 421.0
-offset_top = 794.0
-offset_right = 498.0
-offset_bottom = 874.0
-icon = ExtResource("7_pxmq2")
-flat = true
-
-[node name="TouchScreenBuah" type="TouchScreenButton" parent="."]
-script = ExtResource("8_od0qy")
-
-[node name="buah" type="Button" parent="TouchScreenBuah"]
-offset_left = 182.0
+[node name="spam" type="Button" parent="TouchScreenSpam"]
+offset_left = 149.0
 offset_top = 546.0
-offset_right = 327.0
-offset_bottom = 689.0
-icon = ExtResource("4_5riw1")
+offset_right = 300.0
+offset_bottom = 701.0
+icon = ExtResource("6_mrqmw")
 flat = true
 expand_icon = true
 
@@ -62,19 +55,68 @@ icon = ExtResource("5_p8w0v")
 flat = true
 expand_icon = true
 
-[node name="TouchScreenSusu" type="TouchScreenButton" parent="."]
+[node name="TouchScreenBurger" type="TouchScreenButton" parent="."]
 script = ExtResource("8_od0qy")
 
-[node name="susu" type="Button" parent="TouchScreenSusu"]
-offset_left = 302.0
-offset_top = 231.0
-offset_right = 421.0
-offset_bottom = 386.0
-icon = ExtResource("6_6lo8h")
+[node name="burger" type="Button" parent="TouchScreenBurger"]
+offset_left = 253.0
+offset_top = 197.0
+offset_right = 450.0
+offset_bottom = 427.0
+icon = ExtResource("9_cvapa")
 flat = true
 expand_icon = true
 
-[connection signal="pressed" from="TouchScreenButton4/Button 4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="TouchScreenBuah/buah" to="." method="_on_buah_pressed"]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 286.935
+offset_top = 437.754
+offset_right = 326.935
+offset_bottom = 477.754
+
+[node name="benar" type="Sprite2D" parent="Control"]
+visible = false
+scale = Vector2(0.837905, 0.853927)
+texture = ExtResource("10_vmk6j")
+
+[node name="salah" type="Sprite2D" parent="Control"]
+visible = false
+scale = Vector2(0.837905, 0.853927)
+texture = ExtResource("11_46x6g")
+
+[node name="TouchScreenButton7" type="TouchScreenButton" parent="Control"]
+position = Vector2(-286.935, -437.754)
+script = ExtResource("12_e81ef")
+
+[node name="replay" type="Button" parent="Control/TouchScreenButton7"]
+visible = false
+offset_left = 181.0
+offset_top = 781.0
+offset_right = 355.0
+offset_bottom = 972.0
+icon = ExtResource("13_t6t6a")
+flat = true
+expand_icon = true
+
+[node name="lanjut" type="Button" parent="Control/TouchScreenButton7"]
+visible = false
+anchors_preset = -1
+anchor_left = 2.277
+anchor_top = -3.869
+anchor_right = 2.277
+anchor_bottom = -3.869
+offset_left = 208.0
+offset_top = 815.0
+offset_right = 333.0
+offset_bottom = 928.0
+keep_pressed_outside = true
+icon = ExtResource("14_hyyxu")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TouchScreenSpam/spam" to="." method="_on_spam_pressed"]
 [connection signal="pressed" from="TouchScreenNasi/nasi" to="." method="_on_nasi_pressed"]
-[connection signal="pressed" from="TouchScreenSusu/susu" to="." method="_on_susu_pressed"]
+[connection signal="pressed" from="TouchScreenBurger/burger" to="." method="_on_burger_pressed"]
+[connection signal="pressed" from="Control/TouchScreenButton7/replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="Control/TouchScreenButton7/lanjut" to="." method="_on_lanjut_pressed"]

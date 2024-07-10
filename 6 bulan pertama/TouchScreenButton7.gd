@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_lanjut_pressed():
-	get_tree().change_scene_to_file("res://6 bulan/6Bulan1.1.tscn")
+	get_tree().change_scene_to_file("res://2-5 tahun/anak2-5.4.tscn")

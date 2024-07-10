@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b8dk4sqad3rac"]
+[gd_scene load_steps=15 format=3 uid="uid://b8dk4sqad3rac"]
 
 [ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_qurfs"]
 [ext_resource type="Script" path="res://2-5 tahun/anak2-5.4.gd" id="1_rye13"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton5.gd" id="9_tsich"]
 [ext_resource type="Texture2D" uid="uid://f1vtofc3x4sq" path="res://6 bulan pertama/halaman 2/Ceklist-benar.png" id="11_7vfee"]
 [ext_resource type="Texture2D" uid="uid://urb0al6wld6i" path="res://6 bulan pertama/halaman 2/Salah.png" id="12_edyvj"]
+[ext_resource type="Script" path="res://6 bulan pertama/TouchScreenButton7.gd" id="13_837ms"]
 [ext_resource type="Texture2D" uid="uid://c7tdosr0peo02" path="res://6 bulan pertama/halaman 2/reload.png" id="14_orich"]
 [ext_resource type="Texture2D" uid="uid://cw58mq70qo36b" path="res://6 bulan pertama/button.png" id="15_v6kh0"]
 
@@ -105,6 +106,7 @@ texture = ExtResource("12_edyvj")
 
 [node name="TouchScreenButton7" type="TouchScreenButton" parent="Control"]
 position = Vector2(-286.935, -437.754)
+script = ExtResource("13_837ms")
 
 [node name="replay" type="Button" parent="Control/TouchScreenButton7"]
 visible = false
