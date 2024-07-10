@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7e81o84614wt"]
+
+[ext_resource type="Texture2D" uid="uid://cfgcm3vsfcm74" path="res://asset 8 - 11 bulan/2bg bayi.png" id="1_0jw3m"]
+[ext_resource type="Script" path="res://halaman2.gd" id="1_mf4xu"]
+[ext_resource type="Texture2D" uid="uid://bdpwhrd4ttyxe" path="res://asset 8 - 11 bulan/2bayi 6 - 8.png" id="2_ibim8"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="3_ocrf6"]
+
+[sub_resource type="GDScript" id="GDScript_82cl5"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="halaman2" type="Node2D"]
+script = ExtResource("1_mf4xu")
+
+[node name="BgBayi" type="Sprite2D" parent="."]
+position = Vector2(269.5, 477.75)
+scale = Vector2(0.49537, 0.499219)
+texture = ExtResource("1_0jw3m")
+
+[node name="Bayi8-11" type="Sprite2D" parent="."]
+position = Vector2(295, 720)
+scale = Vector2(0.47037, 0.487037)
+texture = ExtResource("2_ibim8")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+
+[node name="nextToResep2" type="Button" parent="TouchScreenButton"]
+offset_left = 434.0
+offset_top = 823.0
+offset_right = 528.0
+offset_bottom = 944.0
+icon = ExtResource("3_ocrf6")
+flat = true
+expand_icon = true
+script = SubResource("GDScript_82cl5")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="TouchScreenButton/nextToResep2" to="." method="_on_next_to_resep_pressed"]

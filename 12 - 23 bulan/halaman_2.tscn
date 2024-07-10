@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxgqncoxv7gno"]
+
+[ext_resource type="Script" path="res://12 - 23 bulan/halaman_2.gd" id="1_psx00"]
+[ext_resource type="Texture2D" uid="uid://cfgcm3vsfcm74" path="res://asset 8 - 11 bulan/2bg bayi.png" id="2_ee2pn"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://scene/asset/button.png" id="3_6dr8y"]
+[ext_resource type="Texture2D" uid="uid://cy2j1m6ovxju1" path="res://12 - 23 bulan/bayi 11 - 23 bulan.png" id="4_alucm"]
+
+[node name="halaman_2" type="Node2D"]
+script = ExtResource("1_psx00")
+
+[node name="BgBayi" type="Sprite2D" parent="."]
+position = Vector2(269.5, 477.75)
+scale = Vector2(0.49537, 0.499219)
+texture = ExtResource("2_ee2pn")
+
+[node name="Bayi11-23Bulan" type="Sprite2D" parent="."]
+position = Vector2(299, 654)
+scale = Vector2(0.619907, 0.563542)
+texture = ExtResource("4_alucm")
+
+[node name="next to kulkas" type="TouchScreenButton" parent="."]
+
+[node name="next to kulkas" type="Button" parent="next to kulkas"]
+offset_left = 434.0
+offset_top = 823.0
+offset_right = 528.0
+offset_bottom = 944.0
+icon = ExtResource("3_6dr8y")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next to kulkas/next to kulkas" to="." method="_on_next_to_kulkas_pressed"]

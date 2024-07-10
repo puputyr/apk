@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://ciuv32ltaa3r8"]
+
+[ext_resource type="Texture2D" uid="uid://bccp8cib871ls" path="res://asset 8 - 11 bulan/1bgkuning.png" id="1_bp58i"]
+[ext_resource type="Texture2D" uid="uid://cvagsigv3jddf" path="res://asset 8 - 11 bulan/1light1.png" id="2_2d2o6"]
+[ext_resource type="Texture2D" uid="uid://be2ttvnhpeovn" path="res://asset 8 - 11 bulan/1light2.png" id="3_fdeil"]
+[ext_resource type="Texture2D" uid="uid://cslewnwo0v4wr" path="res://asset 8 - 11 bulan/1shine.png" id="4_v5q52"]
+
+[node name="Awal" type="Sprite2D"]
+position = Vector2(267.875, 486)
+scale = Vector2(1.40856, 1.1588)
+texture = ExtResource("1_bp58i")
+
+[node name="Light1" type="Sprite2D" parent="."]
+position = Vector2(-5.59082, 3.05176e-05)
+texture = ExtResource("2_2d2o6")
+
+[node name="Light2" type="Sprite2D" parent="."]
+position = Vector2(-2.75104, 5.17783)
+texture = ExtResource("3_fdeil")
+
+[node name="Shine" type="Sprite2D" parent="."]
+position = Vector2(2.21857, -8.62958)
+texture = ExtResource("4_v5q52")

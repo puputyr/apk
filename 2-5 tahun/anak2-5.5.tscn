@@ -1,15 +1,18 @@
-[gd_scene load_steps=9 format=3 uid="uid://ccb63dwag5wlk"]
+[gd_scene load_steps=11 format=3 uid="uid://ccb63dwag5wlk"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_6fpnw"]
-[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://asset 2-5 tahun/meja.png" id="2_i11v6"]
-[ext_resource type="Texture2D" uid="uid://bddwy0y0io0rn" path="res://asset 2-5 tahun/jam 3.png" id="3_abdwg"]
-[ext_resource type="Texture2D" uid="uid://b0ybblpu7q32a" path="res://asset 2-5 tahun/melon.png" id="4_7nwc7"]
-[ext_resource type="Texture2D" uid="uid://g7p5h3ghmcu2" path="res://asset 2-5 tahun/nasgor.png" id="5_omkq3"]
-[ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://asset 2-5 tahun/air.png" id="6_haksa"]
-[ext_resource type="Texture2D" uid="uid://3666e8y5u1mq" path="res://asset 2-5 tahun/info.png" id="7_ojgil"]
-[ext_resource type="Script" path="res://Button 5.gd" id="9_erqj8"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_6fpnw"]
+[ext_resource type="Script" path="res://2-5 tahun/anak2-5.5.gd" id="1_dt8ub"]
+[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://2-5 tahun/asset 2-5 tahun/meja.png" id="2_i11v6"]
+[ext_resource type="Texture2D" uid="uid://bddwy0y0io0rn" path="res://2-5 tahun/asset 2-5 tahun/jam 3.png" id="3_abdwg"]
+[ext_resource type="Texture2D" uid="uid://b0ybblpu7q32a" path="res://2-5 tahun/asset 2-5 tahun/melon.png" id="4_7nwc7"]
+[ext_resource type="Texture2D" uid="uid://g7p5h3ghmcu2" path="res://2-5 tahun/asset 2-5 tahun/nasgor.png" id="5_omkq3"]
+[ext_resource type="Texture2D" uid="uid://c8awkr2n71gg8" path="res://2-5 tahun/asset 2-5 tahun/air.png" id="6_haksa"]
+[ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton5.gd" id="7_5qlsm"]
+[ext_resource type="Texture2D" uid="uid://3666e8y5u1mq" path="res://2-5 tahun/asset 2-5 tahun/info.png" id="7_ojgil"]
+[ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton6.gd" id="8_488i2"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_dt8ub")
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(269.25, 479)
@@ -25,23 +28,57 @@ texture = ExtResource("2_i11v6")
 position = Vector2(271, 210)
 texture = ExtResource("3_abdwg")
 
-[node name="melon" type="Sprite2D" parent="."]
-position = Vector2(244, 656)
-texture = ExtResource("4_7nwc7")
+[node name="TouchScreenButton6" type="TouchScreenButton" parent="."]
+script = ExtResource("8_488i2")
 
-[node name="nasgor" type="Sprite2D" parent="."]
-position = Vector2(267, 474)
-texture = ExtResource("5_omkq3")
-
-[node name="air" type="Sprite2D" parent="."]
-position = Vector2(362, 304)
-texture = ExtResource("6_haksa")
-
-[node name="Button 6" type="Button" parent="."]
+[node name="Button 6" type="Button" parent="TouchScreenButton6"]
 offset_left = 133.0
 offset_top = 745.0
 offset_right = 409.0
 offset_bottom = 825.0
 icon = ExtResource("7_ojgil")
 flat = true
-script = ExtResource("9_erqj8")
+
+[node name="TouchScreenAir" type="TouchScreenButton" parent="."]
+position = Vector2(362, 304)
+script = ExtResource("7_5qlsm")
+
+[node name="air" type="Button" parent="TouchScreenAir"]
+offset_left = -66.0
+offset_top = -92.0
+offset_right = 65.0
+offset_bottom = 77.0
+icon = ExtResource("6_haksa")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenNasgor" type="TouchScreenButton" parent="."]
+position = Vector2(255, 440)
+script = ExtResource("7_5qlsm")
+
+[node name="nasgor" type="Button" parent="TouchScreenNasgor"]
+offset_left = -103.0
+offset_top = -99.0
+offset_right = 124.0
+offset_bottom = 113.0
+icon = ExtResource("5_omkq3")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenMelon" type="TouchScreenButton" parent="."]
+position = Vector2(266, 616)
+script = ExtResource("7_5qlsm")
+
+[node name="melon" type="Button" parent="TouchScreenMelon"]
+offset_left = -69.0
+offset_top = -76.0
+offset_right = 123.0
+offset_bottom = 83.0
+icon = ExtResource("4_7nwc7")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TouchScreenButton6/Button 6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="TouchScreenAir/air" to="." method="_on_air_pressed"]
+[connection signal="pressed" from="TouchScreenNasgor/nasgor" to="." method="_on_nasgor_pressed"]
+[connection signal="pressed" from="TouchScreenMelon/melon" to="." method="_on_melon_pressed"]

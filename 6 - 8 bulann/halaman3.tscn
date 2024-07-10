@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxa6uhesc06td"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_k8d1u"]
+[ext_resource type="Texture2D" uid="uid://btfwbyo3oqttb" path="res://asset 8 - 11 bulan/3resep isi.png" id="2_hqdag"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="3_c0st6"]
+
+[sub_resource type="GDScript" id="GDScript_e07ce"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_pressed():
+	get_tree().change_scene_to_file(\"res://halaman4.tscn\")
+	pass # Replace with function body.
+"
+
+[node name="halaman3" type="Node2D"]
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(269.25, 478)
+scale = Vector2(1.35242, 1.11972)
+texture = ExtResource("1_k8d1u")
+
+[node name="3ResepIsi" type="Sprite2D" parent="."]
+position = Vector2(272, 434)
+scale = Vector2(0.504398, 0.471354)
+texture = ExtResource("2_hqdag")
+
+[node name="next  to masak" type="TouchScreenButton" parent="."]
+
+[node name="next to masak" type="Button" parent="next  to masak"]
+offset_left = 250.0
+offset_top = 821.0
+offset_right = 344.0
+offset_bottom = 942.0
+icon = ExtResource("3_c0st6")
+flat = true
+expand_icon = true
+script = SubResource("GDScript_e07ce")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next  to masak/next to masak" to="next  to masak/next to masak" method="_on_pressed"]

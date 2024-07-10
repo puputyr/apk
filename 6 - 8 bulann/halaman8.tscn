@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dujvhbvugy36u"]
+
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_tj22m"]
+[ext_resource type="Texture2D" uid="uid://ds4ewp4hhylm1" path="res://asset 8 - 11 bulan/selesai.png" id="2_dclpo"]
+[ext_resource type="Texture2D" uid="uid://cqevar2073b5a" path="res://asset 8 - 11 bulan/button-keluar.png" id="3_841h7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(269.75, 480.5)
+scale = Vector2(1.3855, 1.14202)
+texture = ExtResource("1_tj22m")
+
+[node name="selesai" type="TouchScreenButton" parent="."]
+
+[node name="selesai" type="Button" parent="selesai"]
+offset_left = 114.0
+offset_top = 335.0
+offset_right = 404.0
+offset_bottom = 612.0
+icon = ExtResource("2_dclpo")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="keluar" type="TouchScreenButton" parent="."]
+
+[node name="keluar" type="Button" parent="keluar"]
+offset_left = 121.0
+offset_top = 534.0
+offset_right = 396.0
+offset_bottom = 652.0
+icon = ExtResource("3_841h7")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true

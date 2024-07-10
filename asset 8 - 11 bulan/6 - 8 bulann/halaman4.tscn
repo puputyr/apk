@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://yffosweh8or6"]
+
+[ext_resource type="Script" path="res://halaman4.gd" id="1_f6syt"]
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_p1678"]
+[ext_resource type="Texture2D" uid="uid://c2ywd5owb2dyr" path="res://asset 8 - 11 bulan/4kulkas.png" id="2_krrid"]
+[ext_resource type="Texture2D" uid="uid://1vnrm6apvoev" path="res://asset 8 - 11 bulan/telur.png" id="3_57nr1"]
+[ext_resource type="Texture2D" uid="uid://dxp1au4t84k2i" path="res://asset 8 - 11 bulan/santan.png" id="4_1dyev"]
+[ext_resource type="Texture2D" uid="uid://d4fbsfukcxe6t" path="res://asset 8 - 11 bulan/Beras.png" id="5_w0met"]
+[ext_resource type="Texture2D" uid="uid://bi71c5xj0w77c" path="res://asset 8 - 11 bulan/minyak kelapa.png" id="6_w81c2"]
+[ext_resource type="Texture2D" uid="uid://j5if28u1dacn" path="res://asset 8 - 11 bulan/tempe.png" id="7_foib8"]
+[ext_resource type="Texture2D" uid="uid://dlpoy3qni0tmm" path="res://asset 8 - 11 bulan/wortel.png" id="8_07ejr"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="9_w3ps4"]
+
+[node name="halaman4" type="Node2D"]
+script = ExtResource("1_f6syt")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(272.875, 479.25)
+scale = Vector2(1.40013, 1.14261)
+texture = ExtResource("1_p1678")
+
+[node name="Kulkas" type="Sprite2D" parent="."]
+position = Vector2(278, 496)
+scale = Vector2(1.44283, 1.42568)
+texture = ExtResource("2_krrid")
+
+[node name="Wortel" type="Sprite2D" parent="."]
+position = Vector2(370, 451)
+texture = ExtResource("8_07ejr")
+
+[node name="Tempe" type="Sprite2D" parent="."]
+position = Vector2(283, 357)
+texture = ExtResource("7_foib8")
+
+[node name="MinyakKelapa" type="Sprite2D" parent="."]
+position = Vector2(403, 556)
+texture = ExtResource("6_w81c2")
+
+[node name="Beras" type="Sprite2D" parent="."]
+position = Vector2(172, 568)
+texture = ExtResource("5_w0met")
+
+[node name="17" type="Sprite2D" parent="."]
+position = Vector2(187, 440)
+scale = Vector2(0.124074, 0.114352)
+texture = ExtResource("3_57nr1")
+
+[node name="13" type="Sprite2D" parent="."]
+position = Vector2(377, 211)
+scale = Vector2(0.109259, 0.111343)
+texture = ExtResource("4_1dyev")
+
+[node name="next to masak" type="TouchScreenButton" parent="."]
+
+[node name="next to masak2" type="Button" parent="next to masak"]
+offset_left = 437.0
+offset_top = 832.0
+offset_right = 531.0
+offset_bottom = 953.0
+icon = ExtResource("9_w3ps4")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="next to masak/next to masak2" to="." method="_on_next_to_masak_2_pressed"]

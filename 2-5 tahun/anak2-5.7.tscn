@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcy3okwini041"]
+[gd_scene load_steps=5 format=3 uid="uid://dcy3okwini041"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_7hybq"]
-[ext_resource type="Texture2D" uid="uid://c5yi52jdenao7" path="res://asset 2-5 tahun/selesai.png" id="2_37roy"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_7hybq"]
+[ext_resource type="Texture2D" uid="uid://c5yi52jdenao7" path="res://2-5 tahun/asset 2-5 tahun/selesai.png" id="2_37roy"]
+[ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton8.gd" id="2_f6xmv"]
 
 [sub_resource type="GDScript" id="GDScript_5ew50"]
 script/source = "extends Button
@@ -24,7 +25,10 @@ position = Vector2(268.75, 480.5)
 scale = Vector2(1.37532, 1.12559)
 texture = ExtResource("1_7hybq")
 
-[node name="Button 3" type="Button" parent="."]
+[node name="TouchScreenButton8" type="TouchScreenButton" parent="."]
+script = ExtResource("2_f6xmv")
+
+[node name="Button 8" type="Button" parent="TouchScreenButton8"]
 offset_left = 98.0
 offset_top = 442.0
 offset_right = 447.0
@@ -33,3 +37,5 @@ icon = ExtResource("2_37roy")
 flat = true
 expand_icon = true
 script = SubResource("GDScript_5ew50")
+
+[connection signal="pressed" from="TouchScreenButton8/Button 8" to="TouchScreenButton8" method="_on_button_8_pressed"]

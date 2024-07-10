@@ -1,15 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxipwksp8lija"]
+[gd_scene load_steps=10 format=3 uid="uid://cxipwksp8lija"]
 
-[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://asset 2-5 tahun/bg 1.png" id="1_y6yli"]
-[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://asset 2-5 tahun/meja.png" id="2_tuwb2"]
-[ext_resource type="Texture2D" uid="uid://de26iskhay5q2" path="res://asset 2-5 tahun/jam.png" id="3_1ran0"]
-[ext_resource type="Texture2D" uid="uid://dpjravxcesnpc" path="res://asset 2-5 tahun/buah.png" id="4_5riw1"]
-[ext_resource type="Texture2D" uid="uid://dq5pfjrben4ci" path="res://asset 2-5 tahun/nasi.png" id="5_p8w0v"]
-[ext_resource type="Texture2D" uid="uid://bqr5c8tcq40t8" path="res://asset 2-5 tahun/susu.png" id="6_6lo8h"]
-[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://asset 2-5 tahun/button.png" id="7_pxmq2"]
-[ext_resource type="Script" path="res://Button 4.gd" id="8_5pa0j"]
+[ext_resource type="Script" path="res://2-5 tahun/anak2-5.3.gd" id="1_3b3d1"]
+[ext_resource type="Texture2D" uid="uid://chn3d1tof2vpu" path="res://2-5 tahun/asset 2-5 tahun/bg 1.png" id="1_y6yli"]
+[ext_resource type="Texture2D" uid="uid://bxomu7sy6onij" path="res://2-5 tahun/asset 2-5 tahun/meja.png" id="2_tuwb2"]
+[ext_resource type="Texture2D" uid="uid://de26iskhay5q2" path="res://2-5 tahun/asset 2-5 tahun/jam.png" id="3_1ran0"]
+[ext_resource type="Texture2D" uid="uid://dpjravxcesnpc" path="res://2-5 tahun/asset 2-5 tahun/buah.png" id="4_5riw1"]
+[ext_resource type="Texture2D" uid="uid://dq5pfjrben4ci" path="res://2-5 tahun/asset 2-5 tahun/nasi.png" id="5_p8w0v"]
+[ext_resource type="Texture2D" uid="uid://bqr5c8tcq40t8" path="res://2-5 tahun/asset 2-5 tahun/susu.png" id="6_6lo8h"]
+[ext_resource type="Texture2D" uid="uid://p656tohxpxr7" path="res://2-5 tahun/asset 2-5 tahun/button.png" id="7_pxmq2"]
+[ext_resource type="Script" path="res://2-5 tahun/TouchScreenButton4.gd" id="8_od0qy"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_3b3d1")
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(269.25, 479)
@@ -25,23 +27,54 @@ texture = ExtResource("2_tuwb2")
 position = Vector2(267, 788)
 texture = ExtResource("3_1ran0")
 
-[node name="buah" type="Sprite2D" parent="."]
-position = Vector2(221, 662)
-texture = ExtResource("4_5riw1")
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="."]
+script = ExtResource("8_od0qy")
 
-[node name="nasi" type="Sprite2D" parent="."]
-position = Vector2(272, 474)
-texture = ExtResource("5_p8w0v")
-
-[node name="susu" type="Sprite2D" parent="."]
-position = Vector2(362, 297)
-texture = ExtResource("6_6lo8h")
-
-[node name="Button 4" type="Button" parent="."]
+[node name="Button 4" type="Button" parent="TouchScreenButton4"]
 offset_left = 421.0
 offset_top = 794.0
 offset_right = 498.0
 offset_bottom = 874.0
 icon = ExtResource("7_pxmq2")
 flat = true
-script = ExtResource("8_5pa0j")
+
+[node name="TouchScreenBuah" type="TouchScreenButton" parent="."]
+script = ExtResource("8_od0qy")
+
+[node name="buah" type="Button" parent="TouchScreenBuah"]
+offset_left = 182.0
+offset_top = 546.0
+offset_right = 327.0
+offset_bottom = 689.0
+icon = ExtResource("4_5riw1")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenNasi" type="TouchScreenButton" parent="."]
+script = ExtResource("8_od0qy")
+
+[node name="nasi" type="Button" parent="TouchScreenNasi"]
+offset_left = 168.0
+offset_top = 362.0
+offset_right = 348.0
+offset_bottom = 534.0
+icon = ExtResource("5_p8w0v")
+flat = true
+expand_icon = true
+
+[node name="TouchScreenSusu" type="TouchScreenButton" parent="."]
+script = ExtResource("8_od0qy")
+
+[node name="susu" type="Button" parent="TouchScreenSusu"]
+offset_left = 302.0
+offset_top = 231.0
+offset_right = 421.0
+offset_bottom = 386.0
+icon = ExtResource("6_6lo8h")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="TouchScreenButton4/Button 4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="TouchScreenBuah/buah" to="." method="_on_buah_pressed"]
+[connection signal="pressed" from="TouchScreenNasi/nasi" to="." method="_on_nasi_pressed"]
+[connection signal="pressed" from="TouchScreenSusu/susu" to="." method="_on_susu_pressed"]

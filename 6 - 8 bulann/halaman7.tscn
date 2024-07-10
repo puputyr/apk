@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://b50gp72i1n7o4"]
+
+[ext_resource type="Script" path="res://halaman7.gd" id="1_jpu1l"]
+[ext_resource type="Texture2D" uid="uid://de0636a3s6vnh" path="res://asset 8 - 11 bulan/bg biru.png" id="1_ohto4"]
+[ext_resource type="Texture2D" uid="uid://bytheaepr8s4w" path="res://asset 8 - 11 bulan/informasi gizi group.png" id="4_7buvx"]
+[ext_resource type="Texture2D" uid="uid://7jqk2hjpfp7o" path="res://asset 8 - 11 bulan/gizi final.png" id="5_qgn7p"]
+[ext_resource type="Texture2D" uid="uid://mqc504oei5ti" path="res://asset awal/button.png" id="10_87lyn"]
+
+[node name="halaman7" type="Node2D"]
+script = ExtResource("1_jpu1l")
+
+[node name="BgBiru" type="Sprite2D" parent="."]
+position = Vector2(268.25, 475)
+scale = Vector2(1.35242, 1.12676)
+texture = ExtResource("1_ohto4")
+
+[node name="GiziFinal" type="Sprite2D" parent="."]
+position = Vector2(268, 480.332)
+scale = Vector2(0.423445, 0.375696)
+texture = ExtResource("5_qgn7p")
+
+[node name="InformasiGiziGroup" type="Sprite2D" parent="."]
+position = Vector2(269.375, 173)
+scale = Vector2(0.499306, 0.445602)
+texture = ExtResource("4_7buvx")
+
+[node name="next to endlevel" type="TouchScreenButton" parent="."]
+
+[node name="next to endlevel" type="Button" parent="next to endlevel"]
+offset_left = 250.0
+offset_top = 821.0
+offset_right = 344.0
+offset_bottom = 942.0
+icon = ExtResource("10_87lyn")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next to endlevel/next to endlevel" to="." method="_on_next_to_endlevel_pressed"]
